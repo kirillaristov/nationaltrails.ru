@@ -1,0 +1,9 @@
+{{ with .Page.Params.description }}
+  {{ . }}
+{{ else }}
+  {{ if .IsPage }}
+    {{ with .Site.Params.description }}
+      {{ . }}
+    {{ end }}
+  {{ end }}
+{{ end }}

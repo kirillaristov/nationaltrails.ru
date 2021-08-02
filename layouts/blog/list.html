@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+<ul class="blogcontent">
+  {{- range .Paginator.Pages }}
+  <li>
+    <h2 class="post__title"><a href="{{ .RelPermalink }}">{{ with partial "get-title.html" . }}{{ . }}{{ end }}</a></h2>
+
+    {{ partial "get-date.html" . }}
+    {{ partial "get-post-coord.html" . }}
+
+    {{- with partial "get-images.html" . }}   
+      <p class="images">
+        {{- range $image := . }}
+          {{- with $.Site.GetPage $image }}
+            {{- partial "figure2.html" . }}
+          {{- end }}
+        {{- end }}
+      </p>
+    {{- end }}
+
+    {{ partial "get-content.html" . }}
+  </li>
+  {{- end }}
+</ul>
+
+{{- partial "pagination.html" . }}
+
+{{- end }}

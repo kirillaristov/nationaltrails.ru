@@ -1,0 +1,33 @@
+{{/* Line */}}
+
+<div id="gallery">
+<div id="gChild">
+
+  {{- $filtered := "" }}
+  
+  {{- $gallery1 := where .Site.Pages ".Params.categories" "intersect" $.Page.Params.gallery.categories | default slice }}
+  {{- $gallery2 := where .Site.Pages ".Params.tags" "intersect" $.Page.Params.gallery.tags | default slice }}
+
+  {{- if and (gt (len $gallery1) 0) (gt (len $gallery2) 0) }}
+    {{- $filtered = $gallery1 | intersect $gallery2 }}
+  {{- else if (gt (len $gallery1) 0) }}
+    {{- $filtered = $gallery1 }}
+  {{- else if (gt (len $gallery2) 0) }}
+    {{- $filtered = $gallery2 }}
+  {{- end }}
+
+  {{- $filtered = shuffle $filtered }}
+
+  {{- with $filtered }}
+    {{- range first 15 . }}
+
+      {{- $pic_full := print "/static/media/" .File.ContentBaseName "/" .File.ContentBaseName ".jpg" }}
+      {{- $pic_thumb := print "/static/media/" .File.ContentBaseName "/" .File.ContentBaseName ".jpg.thumb.jpg" -}}
+
+<a class="jpic" href="{{ .RelPermalink }}" title="{{ partial "get-title.html" . }}" data-href="{{ $pic_full }}" data-title="{{ partial "get-title.html" . }}" data-location="{{ with partial "get-media-location.html" . }}{{ chomp . }}{{ end }}"><img loading="lazy" class="galleryPic" src="{{ $pic_thumb }}" alt="{{ partial "get-title.html" . }}{{ with partial "get-content.html" . }}. {{ chomp . }}{{ end }}"></a>
+
+    {{- end }}
+  {{- end -}}
+
+</div>
+</div>

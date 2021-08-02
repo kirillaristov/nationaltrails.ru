@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /map/
+
+Disallow: /ru/license/
+Disallow: /en/license/
+host: kirillaristov.com

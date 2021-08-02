@@ -1,0 +1,16 @@
+{{- $imgPath := add "/static/" (.Destination | safeURL) }}
+{{- $width := "" }}
+{{- $height := "" }}
+
+{{- if fileExists $imgPath }}
+  {{- $img := imageConfig $imgPath }}
+  {{- $width = $img.Width }}
+  {{- $height = $img.Height }}
+{{- end -}}
+
+<img src="{{ .Destination | safeURL }}" 
+  {{- with $width }} width="{{.}}"{{ end -}}
+  {{- with $height }} height="{{.}}"{{ end -}}
+  {{- with .Text }} alt="{{.}}"{{ end -}}
+  {{- with .Title }} title="{{.}}"{{ end -}}
+>

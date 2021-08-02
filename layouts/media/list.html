@@ -1,0 +1,36 @@
+{{ define "main" -}}
+
+<p class="media__tag-list">
+{{- $first := true }}
+{{- range $name, $taxonomy := .Site.Taxonomies.tags }}
+  {{- with $.Site.GetPage (printf "/tags/%s" $name) }}
+    {{- if $first }}{{ $first = false }}{{ else }}, {{ end }}<a href="{{ .RelPermalink }}">{{ $name }}</a>
+  {{- end }}
+{{- end -}}
+</p>
+
+<div class="mediacontent__short">
+{{- range sort .Pages "File.Path" "desc" }}
+
+{{- $path := .RelPermalink }}
+{{- $base := path.Base $path }}
+
+{{- $pic_full := print "/static/media/" $base  "/" $base ".jpg" }}
+{{- $pic_thumb := print "/static/media/" $base  "/" $base ".jpg.thumb.jpg" }}
+
+{{- $pic_thumb2 := print "static/static/media/" $base  "/" $base ".jpg.thumb.jpg" }}
+
+{{- $width := "" }}
+{{- $height := "" }}
+{{- with (imageConfig $pic_thumb2) }}
+  {{- $width = .Width }}
+  {{- $height = .Height }}
+{{- end -}}
+
+<a class="jpic" href="{{ .RelPermalink }}" title="{{ partial "get-title.html" . }}" data-href="{{ $pic_full }}" data-title="{{ partial "get-title.html" . }}" data-location="{{ with partial "get-media-location.html" . }}{{ chomp . }}{{ end }}">
+<img loading="lazy" width="{{ $width }}" height="{{ $height }}" src="{{ $pic_thumb }}" alt="{{ partial "get-title.html" . }}{{ with partial "get-content.html" . }}. {{ chomp . }}{{ end }}">
+</a>
+
+{{ end }}
+</div>
+{{- end }}

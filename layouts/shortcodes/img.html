@@ -1,0 +1,11 @@
+{{ $path := .Get 0 }}
+
+{{- $path := print "/media/" $path }}
+
+{{- with .Site.GetPage ($path) }}
+  {{- .Scratch.Set "addLink" "true" }}
+  {{- .Scratch.Set "addCaption" "false" }}
+  
+  {{- partial "figure.html" . }}
+  
+{{- end }}

@@ -1,0 +1,66 @@
+ /*!
+* baguetteBox.css
+* @author  feimosi
+* @version 1.4.2
+* @url https://github.com/feimosi/baguetteBox.js
+*/
+
+
+#baguetteBox-overlay {position:fixed;z-index:1000;display:none;top:0;left:0;width:100%;height:100%;overflow:hidden;opacity:0;background-color:#222;background-color:rgba(0,0,0,.8);transition:opacity 0.5s ease;}
+
+#baguetteBox-overlay.visible {opacity:1;}
+
+
+.full-image  {display:inline-block;position:relative;width:100%;height:100%;text-align:center;}
+.full-image > figure {display:inline-block;margin:0;height:100%;width:100%;}
+.full-image > figure > img {display:inline-block;max-height:100%;max-width:100%;vertical-align:middle;box-shadow:0 0 8px rgba(0,0,0,.6);}
+.full-image > figure > figcaption {display:block;visibility:visible;position:absolute;bottom:0;width:100%;padding:40px;box-sizing:border-box;text-align:left;line-height:1.5;white-space:normal;color:#ccc;background-color:transparent;transition:all 0.4s ease;}
+.full-image > figure > figcaption > p.location {margin-top:7px;}
+.full-image > figure > figcaption > p {text-shadow:0 0 1px #000;}
+.full-image > figure > figcaption:hover {background-color:rgba(0,0,0,.4)}
+.full-image > figure > figcaption:hover p {text-shadow:0 0 3px #000;}
+
+#baguetteBox-slider.close figcaption  {visibility:hidden;}
+
+.full-image:before {content:'';display:inline-block;height:50%;width:1px;margin-right:-1px;}
+
+#baguetteBox-slider {position:absolute;left:0;top:0;height:100%;width:100%;white-space:nowrap;transition:left 0.4s ease, transform 0.4s ease;}
+#baguetteBox-slider.bounce-from-right {animation:bounceFromRight 0.4s ease-out;}
+#baguetteBox-slider.bounce-from-left {animation:bounceFromLeft 0.4s ease-out;}
+
+@keyframes bounceFromRight {
+	0% {margin-left:0;}
+	50% {margin-left:-30px;}
+	100% {margin-left:0;}
+}
+
+@keyframes bounceFromLeft {
+	0% {margin-left:0;}
+	50% {margin-left:30px;}
+	100% {margin-left:0;}
+}
+
+#next-button, #previous-button {top:50%;top:calc(50% - 30px);width:44px;height:60px;}
+.baguetteBox-button {position:absolute;cursor:pointer;outline:none;padding:0;margin:0;border:0;border-radius:15%;background-color:rgba(50,50,50,.5);color:#ddd;font:1.6em sans-serif;transition:background-color 0.4s ease;}
+.baguetteBox-button:hover {background-color:rgba(50,50,50,.9);}
+#next-button {right:2%;}
+#previous-button {left:2%;}
+#close-button {top:20px;right:calc(2% + 6px);width:29px;height:30px;}
+#descr-button {bottom:15px;right:calc(2% + 4px);width:35px;height:36px;}
+.baguetteBox-button > svg {position:absolute;left:0;top:0;}
+.baguetteBox-button > img {vertical-align:baseline;padding-top:6px;}
+
+figcaption .location {}
+figcaption .coordinates {padding-right:20px;}
+figcaption .time {}
+figcaption .title {}
+
+/* Preloader */
+.spinner {position:absolute;left:50%;top:50%;height:60px;width:60px;margin-left:-30px;margin-top:-30px;}
+.spinner div {position:absolute;height:46.7%;width:46.7%;background:#fff none repeat scroll 0 0;}
+.spinner div:nth-child(1) {animation:1.2s linear 0s normal none infinite running spinner;left:0;top:0;}
+.spinner div:nth-child(2) {animation:1.2s linear 0.3s normal none infinite running spinner;right:0;top:0;}
+.spinner div:nth-child(3) {animation:1.2s linear 0.6s normal none infinite running spinner;bottom:0;right:0;}
+.spinner div:nth-child(4) {animation:1.2s linear 0.9s normal none infinite running spinner;bottom:0;left:0;}
+@keyframes spinner {50% {opacity:0.3;}100% {opacity:1;}}
+@keyframes spinner {50% {opacity:0.3;}100% {opacity:1;}}

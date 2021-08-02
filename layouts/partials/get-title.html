@@ -1,0 +1,23 @@
+{{ $title := .Title }}
+
+{{ if not .IsHome }}
+
+  {{ with .File }}
+    {{ $title = .ContentBaseName }}
+
+    {{ $currentPage := strings.TrimRight "/" (replaceRE "^/(en|ru)" "" $.RelPermalink ) }}
+
+    {{ if gt (len $.Page.Title) 0 }}
+      {{ $title = $.Page.Title }}
+    {{ else }}
+      {{ with $.Sites.First.GetPage $currentPage }}
+        {{ if gt (len .Title) 0 }}
+          {{ $title = .Title }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+  {{ end }}
+{{ end }}
+
+{{ return $title }}

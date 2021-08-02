@@ -1,0 +1,17 @@
+{{ $coord := .Param "coord" | default "" }}
+
+{{- $currentPage := strings.TrimRight "/" (replace .RelPermalink "/en" "") }}
+
+{{- if eq (len (.Param "coord" | default "" )) 0 }}
+  {{- with .Sites.First.GetPage $currentPage }}
+    {{- $coord = .Param "coord" }}
+  {{- end }}
+{{- end }}
+
+{{- with $coord }}
+
+{{- $url := printf "/map/#type=hybrid&amp;zoom=12&amp;center=%s&amp;placemark=%s" (.) (.) -}}
+
+<div class="post__coord"><small>{{ $.Site.Params.COORDINATES }}: <a target="_blank" {{ printf "href=%q" $url | safeHTMLAttr }}>{{.}}</a></small></div>
+
+{{- end }}

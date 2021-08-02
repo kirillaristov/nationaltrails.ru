@@ -1,0 +1,4 @@
+{{/* Line */}}
+
+{{ $js := resources.Get "js/main.js" | fingerprint -}}
+<script src="{{ $js.RelPermalink }}" {{ printf "integrity=%q" $js.Data.Integrity | safeHTMLAttr }}></script>

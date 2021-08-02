@@ -1,0 +1,3 @@
+{{/* line */}}
+<h{{ .Level }} id="{{ .Text | anchorize }}">{{ .Text | safeHTML }} {{ printf "<a class=\"anchor_heading\" href=\"#%s\"" (.Text | anchorize) | safeHTML }}>¶</a></h{{ .Level }}>
+{{/* line */}}

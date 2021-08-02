@@ -1,0 +1,98 @@
+{{ define "main" }}
+
+<h1>{{ .Title }}</h1>
+<!-- terms.html - страница для categories/tags -->
+
+<p><a href="/{{ .Lang }}/categories/">Categories</a> / <a href="/{{ .Lang }}/tags/">Tags</a></p>
+  
+<h1>1. Tags/Categories с подсчетом</h1>
+<ul>
+    {{ range .Data.Terms.Alphabetical }}
+            <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
+    {{ end }}
+</ul>
+
+<h1>2. Tags/Categories с подсчетом</h1>
+<ul>
+    {{ $type := .Type }}
+    {{ range $key, $value := .Data.Terms.Alphabetical }}
+        {{ $name := .Name }}
+        {{ $count := .Count }}
+        {{ with $.Site.GetPage (printf "/%s/%s" $type $name) }}
+            <li><a href="{{ .RelPermalink }}">{{ $name }}</a> {{ $count }}</li>
+        {{ end }}
+    {{ end }}
+</ul>
+
+<h1>3. Только Tags без подсчета</h1>
+<ul>
+    {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+        {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+            <li><a href="{{ .RelPermalink }}">{{ $name }}</a></li>
+        {{ end }}
+    {{ end }}
+</ul>
+
+
+<h1>4. Только Tags с подсчетом</h1>
+<ul>
+    {{ range .Site.Taxonomies.tags }}
+            <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
+    {{ end }}
+</ul>
+
+<h1>44. Только Tags с подсчетом, сортировка по убыванию элементов, если больше одного элемента</h1>
+<ul>
+    {{ range .Site.Taxonomies.tags.ByCount }}
+      {{ if gt .Count 1 }}
+        <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
+      {{ end }}
+    {{ end }}
+</ul>
+
+
+
+<h1>5. Categories с подсчетом</h1>  
+<ul>
+    {{ range .Site.Taxonomies.categories }}
+            <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
+    {{ end }}
+</ul>
+
+
+<h1>6. Теги/Категории и список содержимого каждого/каждой</h1>
+{{ range $key, $value := .Data.Terms }}
+  <h2>
+    <a href="{{ "/" | relLangURL }}{{ $.Data.Plural | urlize }}/{{ $key | urlize }}">
+      {{ $.Data.Singular | humanize }}: {{ $key }}
+    </a>
+  </h2>
+  {{ range $value.Pages }}
+    <small>{{ . }}</small>
+  {{ end }}
+{{ end }}
+
+<h1>7. Все категории и все теги. И их содержимое</h1>
+<ul>
+    {{ range $taxonomy_term, $taxonomy := .Site.Taxonomies }}
+        {{ with $.Site.GetPage (printf "/%s" $taxonomy_term) }}
+            <li><a href="{{ .RelPermalink }}">{{ $taxonomy_term }}</a>
+                <ul>
+                    {{ range $key, $value := $taxonomy }}
+                        <li>{{ $key }}</li>
+                        <ul style="margin-left:20px;">
+                            {{ range $value.Pages }}
+                                <li hugo-nav="{{ .RelPermalink}}">
+                                    <small><a href="{{ .RelPermalink}}">{{ .LinkTitle | safeHTML }}</a></small>
+                                </li>
+                            {{ end }}
+                        </ul>
+                    {{ end }}
+                </ul>
+            </li>
+        {{ end }}
+    {{ end }}
+</ul>
+
+  
+{{- end }}

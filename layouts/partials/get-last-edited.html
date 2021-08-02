@@ -1,0 +1,17 @@
+{{ with partial "get-date-from-filename.html" . -}}
+
+<p class="last-edited break">
+  <small>{{ $.Site.Params.PUBLISHED }}
+    <!-- <time datetime="{{ . | dateFormat "2006-01-02T15:04:05Z0700" }}">...</time> -->
+    <time {{ printf `datetime="%s"` ( . | dateFormat "2006-01-02T15:04:05Z07:00") | safeHTMLAttr }}>
+      
+      {{- if eq "ru" $.Lang -}}
+        {{- . | dateFormat "1" }} {{ index $.Site.Data.month (. | dateFormat "1") }} {{ . | dateFormat "2006"  }} в {{ . | dateFormat "15" }}:{{ . | dateFormat "04" }} UTC
+      {{- else -}}
+        {{- . | dateFormat $.Site.Params.dateLastEdited }} UTC
+      {{- end -}}
+
+    </time>.</small>
+</p>
+  
+{{- end }}

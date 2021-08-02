@@ -1,0 +1,4 @@
+/*kir - удобное редактирование текста*/
+/*kir*/#control_bar {margin-top:2px;height:2em;line-height:2em;background-color:#fff;}
+/*kir*/#control_bar span {padding:2px;border:1px solid #ccc;}
+#components  #control_bar {position:fixed;left:15px;bottom:15px;}

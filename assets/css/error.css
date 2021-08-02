@@ -1,0 +1,19 @@
+/* latin */
+@font-face {
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Cuprum Regular'), local('Cuprum-Regular'), url('../fonts/cuprum-regular.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+html {height:100%;}
+body {display:flex;justify-content:center;align-items:center;height:100%;margin:0;padding:10px;font-family:cuprum,serif;box-sizing:border-box;text-align:center;}
+
+h1{margin:0 0 15px;font-size:50px;line-height:60px;font-weight:normal;}
+h2{margin:0 0 15px;font-size:20px;line-height:25px;font-weight:normal;}
+
+a{background-color:inherit;font-weight:normal;text-decoration:none;}
+a:link{color:#1a3dc1;}
+a:visited{color:#800080;}
+a:hover{color:#f00;}
+a:active{color:#f00;}

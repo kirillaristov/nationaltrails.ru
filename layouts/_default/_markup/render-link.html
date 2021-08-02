@@ -1,0 +1,20 @@
+{{- $href := "" }}
+{{- $classes := "" }}
+
+{{- if in .Destination "?classes=" }}
+  {{- $array := split .Destination "?classes=" }}
+  {{- $href = index $array 0 }}
+  {{- $classes = replace (index $array 1 ) "," " " }}
+{{- else }}
+  {{- $href = .Destination }}
+{{- end -}}
+
+<a href="{{ $href | safeURL }}"
+  {{- with .Title }} title="{{.}}"{{ end }}
+  {{- with $classes }} class="{{ $classes }}"{{ end }}
+  {{- if strings.HasPrefix .Destination "http" }} target="_blank" rel="noopener"{{ end -}}
+>
+
+  {{- .Text | safeHTML -}}
+
+</a>

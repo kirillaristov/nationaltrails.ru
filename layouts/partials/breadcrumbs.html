@@ -1,0 +1,32 @@
+{{/* Line */}}
+
+<div class="top-bar">
+  <div class="breadcrumbs__wrapper">
+    <nav class="breadcrumbs">
+      {{- template "breadcrumbnav" (dict "p1" . "p2" .) }}
+      {{- if eq .Kind "term" }}
+      
+      {{- with .Pages }}
+      <span>{{ $.Title }} <sup>[{{ len . }}]</sup></span>
+      {{- end }}
+      
+      {{- end }}
+    </nav>
+
+    
+{{- define "breadcrumbnav" }}
+{{- if .p1.Parent }}
+{{- template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2 )  }}
+{{- else if not .p1.IsHome }}
+{{- template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )  }}
+{{- end -}}
+
+{{- if not (eq .p1 .p2) }}
+      <span><a href="{{ .p1.RelPermalink }}">{{ .p1.Title }}</a></span> / 
+{{- else if .p1.IsSection }}
+      <span>{{ .p1.Title }}</span>
+{{- end }}
+
+{{- end }}
+  </div>
+</div>

@@ -1,0 +1,18 @@
+{{ with .File.Dir }}
+
+  {{- $imageCoord := findRE "[n|N][0-9]{2,3}-[0-9]{5,6}[e|E][0-9]{2,3}-[0-9]{5,6}" . 1 }}
+
+  {{- $imageCoord := delimit $imageCoord "" }}
+
+  {{- with $imageCoord }}
+    {{- $imageCoord := replaceRE "[n|N]([0-9]{2,3})-([0-9]{5,6})[e|E]([0-9]{2,3})-([0-9]{5,6})" "$1.$2,$3.$4" $imageCoord }}
+
+    {{- $imageCoord := replaceRE "[0]([0-9]{2}.[0-9]{5,6})" "$1" $imageCoord -}}
+
+    {{- $url := printf "/map/#type=hybrid&amp;zoom=12&amp;center=%s&amp;placemark=%s" ($imageCoord) ($imageCoord) -}}
+
+      <div class="post__coord"><small>{{ $.Site.Params.COORDINATES }}: <a target="_blank" {{ printf "href=%q" $url | safeHTMLAttr }}>{{$imageCoord}}</a></small></div>
+
+  {{- end }}
+
+{{- end }}

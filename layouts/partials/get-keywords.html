@@ -1,0 +1,9 @@
+{{ with .Page.Params.keywords }}
+  {{ . }}
+{{ else }}
+  {{ if .IsPage }}
+    {{ with .Site.Params.keywords }}
+      {{ . }}
+    {{ end }}
+  {{ end }}
+{{ end }}

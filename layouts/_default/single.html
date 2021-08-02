@@ -1,0 +1,7 @@
+{{ define "main" -}}
+
+<h2 class="post__title">{{ with partial "get-title.html" . }}{{ . }}{{ end }}</h2>
+
+{{- partial "get-content.html" . }}
+
+{{- end }}

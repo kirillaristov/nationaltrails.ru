@@ -1,0 +1,35 @@
+{{- $addLink := false }}
+{{- $addCaption := false }}
+
+
+
+{{- $title := partial "get-title.html" . }}
+{{- $location := partial "get-media-location.html" . }}
+{{- $coord := .Param "coord" }}
+
+{{- $path := .RelPermalink }}
+{{- $base := path.Base $path }}
+
+{{- $pic := print "/static/media/" $base  "/" $base ".jpg.thumb.jpg" -}}
+
+{{/* */}}
+
+{{- if eq $addCaption "true" }}
+<figure class="image">  
+  <figcaption>
+    {{ $title }}<br>
+    {{ .Site.Params.LOCATION }}: {{ $location }}<br>
+    {{ .Site.Params.COORDINATES }}: {{ $coord }}
+  </figcaption>
+  {{- if eq $addLink "true" }}<a href="{{ $path | relLangURL }}">{{ end -}}
+    <img loading="lazy" src="{{ $pic }}" alt="{{ $title }}, {{ $location }}">
+  {{- if eq $addLink "true" }}</a>{{ end }}
+</figure>
+{{- else -}}
+
+{{/* */}}
+{{ if eq $addLink "true" }}<a href="{{ $path | relLangURL }}">{{ end -}}
+ <img loading="lazy" src="{{ $pic }}" alt="{{ $title }}, {{ with $.Scratch.Get "location" }}{{ $.Site.Params.LOCATION }}: {{ . }}.{{ end }}">
+{{- if eq $addLink "true" }}</a>{{ end }}
+
+{{- end }}

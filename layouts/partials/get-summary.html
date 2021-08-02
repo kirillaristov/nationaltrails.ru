@@ -1,0 +1,15 @@
+{{- $currentPage := strings.TrimRight "/" (replace .RelPermalink "/en" "") }}
+
+{{- if eq (len .Summary) 0 }}
+  {{- with .Sites.First.GetPage $currentPage }}
+    <p>{{- .Summary }}</p>
+    {{- if .Truncated }}
+    <p><a href="{{ .RelPermalink }}">{{ .Site.Params.READ_MORE }}</a></p>
+    {{- end }}    
+  {{- end }}
+{{- else }}
+    <p>{{- .Summary }}</p>
+    {{- if .Truncated }}
+    <p><a href="{{ .RelPermalink }}">{{ .Site.Params.READ_MORE }}</a></p>
+    {{- end }}
+{{- end }}

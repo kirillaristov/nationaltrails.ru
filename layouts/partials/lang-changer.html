@@ -1,0 +1,19 @@
+{{- $pageNumber := .Scratch.Get "page-number" }}
+
+{{- $url2 := "" }}
+{{- $lang2 := "" }}
+
+{{- if eq .Lang "en" }}
+  {{- $url2 = replace .RelPermalink "/en/" "/ru/" }}
+  {{- $lang2 = "ru" }}
+{{- else if eq .Lang "ru" }}
+  {{- $url2 = replace .RelPermalink "/ru/" "/en/" }}
+  {{- $lang2 = "en" }}
+{{- end -}}
+
+<div class="header__icon-lang">
+  <a title="{{ .Site.Params.LANG_TO }}" href="{{ $url2 }}{{ with $pageNumber }}page/{{ . | add 1 }}/{{ end }}" hreflang="{{ $lang2 }}">
+    <img src="/dist/images/country-flag-{{ .Lang }}.png" alt="" width="25" height="25">
+    <span>{{ .Site.Params.LANG_FROM | safeHTML }}</span>
+  </a>
+</div>

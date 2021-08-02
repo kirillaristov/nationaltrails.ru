@@ -1,0 +1,15 @@
+{{- $currentPage := strings.TrimRight "/" (replace .RelPermalink "/en" "") }}
+
+{{- $images := "" }}
+
+{{- with .Param "images" }}
+  {{- $images = . }}
+{{- else }}
+  {{- with .Sites.First.GetPage $currentPage }}
+    {{- with .Param "images" }}
+      {{- $images = . }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+
+{{ return $images }}

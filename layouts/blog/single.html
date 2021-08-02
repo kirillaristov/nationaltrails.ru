@@ -1,0 +1,22 @@
+{{- define "main" }}
+
+<h2 class="post__title">{{ with partial "get-title.html" . }}{{ . }}{{ end }}</h2>
+
+{{ partial "get-date.html" . }}
+{{ partial "get-post-coord.html" . }}
+{{ partial "get-tags.html" . }}
+
+{{ partial "prev-next.html" . }}
+
+{{ partial "get-content.html" . }}
+
+{{- with partial "get-images.html" . }}
+  {{- range $image := . }}
+    {{- with $.Site.GetPage $image }}
+      {{- .Scratch.Set "addLink" "true" }}
+      {{- partial "figure.html" . }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+
+{{- end }}
