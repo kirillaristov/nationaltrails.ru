@@ -12,8 +12,7 @@
 {{- $3 := resources.Get "css/baguetteBox.css" }}
 {{- $4 := resources.Get "css/pagination.css" }}
 {{- $5 := resources.Get "css/youtube.css" }}
-{{- $6 := resources.Get "css/route-classifier.css" }}
-{{- $css := slice $1 $2 $3 $4 $5 $6 | resources.Concat "css/global.css" | fingerprint }}
+{{- $css := slice $1 $2 $3 $4 $5 | resources.Concat "css/global.css" | fingerprint }}
 
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" {{ printf "integrity=%q" $css.Data.Integrity | safeHTMLAttr }}>
 

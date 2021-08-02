@@ -77,6 +77,9 @@ outputFormats:
 
 languages:
     en:
+        dateLastEdited: "January 2, 2006 at 15:04"
+        datePosted: "January 2, 2006. 15:04"
+        
         TITLE: "National Trails of the Russia"
         DESCRIPTION: "National Trails of the Russia"
         KEYWORDS: "National trails, expeditions, adventures, soul, nature, wilderness, exploring, education"
@@ -127,6 +130,9 @@ languages:
             CEO: "Main requests: Kirill Aristov"
             GIT: "Our GitHub account"
     ru:
+        dateLastEdited: "2 January 2006 в 15:04"
+        datePosted: "2 January 2006, 15:04"
+        
         TITLE: "Национальные Тропы России"
         DESCRIPTION: "Национальные Тропы России"
         KEYWORDS: "Национальные Тропы, экспедиции, приключения, душа, природа, дикая природа, исследования, образование, обучение"
