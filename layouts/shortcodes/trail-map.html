@@ -12,8 +12,8 @@
 
 <div class="map" id="{{ printf "map-%s" $trail | safeHTMLAttr }}"></div>
 <script>
-  function initMap() {
-    var map = new google.maps.Map(document.getElementById("{{ printf "map-%s" $trail | safeJS }}"), {
+  function initMap-{{ printf "%s" $trail | safeJS }}() {
+    var map-{{ printf "%s" $trail | safeJS }} = new google.maps.Map(document.getElementById("{{ printf "map-%s" $trail | safeJS }}"), {
       zoom: 4,
       center: {lat: 60.7, lng: 107.4},
       mapTypeId: "terrain"
