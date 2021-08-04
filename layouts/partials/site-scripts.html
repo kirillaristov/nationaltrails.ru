@@ -1,6 +1,6 @@
 {{/* Line */}}
 
-<script async defer {{ printf "src=%q" .Site.Params.google_map_api | safeHTMLAttr }}></script>
+<script async defer src="{{ printf "%s" .Site.Params.google_map_api | safeHTMLAttr }}"></script>
 
 {{ $js := resources.Get "js/main.js" | fingerprint -}}
 <script src="{{ $js.RelPermalink }}" {{ printf "integrity=%q" $js.Data.Integrity | safeHTMLAttr }}></script>

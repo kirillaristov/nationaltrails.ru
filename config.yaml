@@ -2,7 +2,7 @@ BaseURL: "https://nationaltrails.ru"
 
 params:
   host: "https://ntr.netlify.app"
-  google_map_api: "https://maps.googleapis.com/maps/api/js?key=AIzaSyARrGZF5N7eKd2JryOZ4xa4XQkzj_NsfTM&amp;callback=initMap"
+  google_map_api: "https://maps.googleapis.com/maps/api/js?key=AIzaSyARrGZF5N7eKd2JryOZ4xa4XQkzj_NsfTM&callback=initMap"
 
 frontmatter:
   date:
