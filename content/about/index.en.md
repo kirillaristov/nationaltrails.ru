@@ -1,5 +1,12 @@
 ---
-title: 'About the nonprofit organization «National Trails»'
+title: "About the nonprofit organization «National Trails»"
+menu:
+  top:
+    name: About
+    weight: 3
+  bottom:
+    name: About
+    weight: 11
 ---
 
 We create the National Trails System. We explore the Rivers and Territories of Russia. We sponsor explorers.

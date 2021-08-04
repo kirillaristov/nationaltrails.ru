@@ -1,5 +1,12 @@
 ---
 title: "How to Contribute"
+menu:
+  top:
+    name: "How to Contribute"
+    weight: 5
+  bottom:
+    name: "How to Contribute"
+    weight: 14
 ---
 
 ## Outdoor: Land research

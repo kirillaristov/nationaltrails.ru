@@ -1,5 +1,12 @@
 ---
-title: 'Глоссарий о Тропах'
+title: "Глоссарий о Тропах"
+menu:
+  middle:
+    name: Глоссарий
+    weight: 9
+  bottom:
+    name: Глоссарий
+    weight: 9
 ---
 
 ## Тропы

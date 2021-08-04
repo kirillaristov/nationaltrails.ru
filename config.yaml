@@ -76,111 +76,132 @@ outputFormats:
     baseName: "rss"
 
 languages:
-    en:
-        dateLastEdited: "January 2, 2006 at 15:04"
-        datePosted: "January 2, 2006. 15:04"
-        
-        TITLE: "National Trails of the Russia"
-        DESCRIPTION: "National Trails of the Russia"
-        KEYWORDS: "National trails, expeditions, adventures, soul, nature, wilderness, exploring, education"
-        AUTHOR: "National Trails nonprofit organization, Russia"
-        GENERATOR: "Effort, Hopes and Love"
-        
-        FEED: "Feed"
-        OR: "or"
-        NEWER: "Up"
-        OLDER: "Down"
-        COORD: "Coordinates"
-        
-        ABOUT_TITLE: "About us"
-        ABOUT: "Nonprofit organization for the creation and development of the National Trails System «National Trails»&nbsp;— we explore the Rivers and Territories of Russia. Participate in the development of the National Trails System in Russia. We sponsor explorers"
-        ABOUT_ID: "Primary State Registration Number 1175000006235, Taxpayer Identification Number/Tax Registration Reason Code 5050135806/505001001, All-Russian Classifier of Enterprises and Organizations 21596050"
-        ABOUT_MORE: "More about the «National Trails» Organization"
-        
-        HOME_PAGE: "Home Page"
-        LANG_TO: "Изменить язык на русский"
-        LANG_FROM: "&nbsp;In&nbsp;English"
-        
-        LAST_EDITED: "This page was last edited on"
-        EDIT_THIS_PAGE: "Edit this page"
-        EDIT_THIS_PAGE_TITLE: "You can edit this page. About how to make changes — on the «How to Contribute» page"
-        
-        PAGE: "Page"
-        SCROLL_UP: "Scroll Up"
-        
-        FOOTER:
-            TITLE: "Nonprofit organization «National Trails» of the Russia"
-            LANG_TO: "Switch to Russian"
-            LANG_FROM: "You are currently viewing English version"
-            OUR_WORK: "Our Work"
-            SLOGAN: "«The very reason for Nature’s existence is for the Education of the Soul»"
-            LICENSE: "Content is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License"
-            MADE_WITH: "Made with Effort, Hopes and"
-            
-        SUBSCRIBE:
-            TITLE: "Subscribe"
-            EMAIL: "Your email"
-            SUBMIT: "Stay in Touch"
-            
-        CONTACTS:
-            TITLE: "Contacts"
-            ADDRESS: "Russia, 141190, Moscow&nbsp;region, City of Science Fryazino, Vokzalnaya&nbsp;street, 19,&nbsp;82"
-            PR: "External Relations and Communications: Zoya&nbsp;Sokolova"
-            WEB: "Publications: Oleg Davydov"
-            CEO: "Main requests: Kirill Aristov"
-            GIT: "Our GitHub account"
-    ru:
-        dateLastEdited: "2 January 2006 в 15:04"
-        datePosted: "2 January 2006, 15:04"
-        
-        TITLE: "Национальные Тропы России"
-        DESCRIPTION: "Национальные Тропы России"
-        KEYWORDS: "Национальные Тропы, экспедиции, приключения, душа, природа, дикая природа, исследования, образование, обучение"
-        AUTHOR: "Некоммерческая организация Национальные Тропы, Россия"
-        GENERATOR: "Effort, Hopes and Love"
+  en:
+    weight: 2
 
-        FEED: "Трансляция"
-        OR: "или"
-        NEWER: "Выше"
-        OLDER: "Ниже"
+    title: "National Trails of the Russia"
+    description: "National Trails of the Russia"
+    keywords: "National trails, expeditions, adventures, soul, nature, wilderness, exploring, education"
+    author: "National Trails nonprofit organization, Russia"
+    generator: "Effort, Hopes and Love"
 
-        COORD: "Координаты"
+    ABOUT_TITLE: "About us"
+    ABOUT: "Nonprofit organization for the creation and development of the National Trails System «National Trails»&nbsp;— we explore the Rivers and Territories of Russia. Participate in the development of the National Trails System in Russia. We sponsor explorers"
+    ABOUT_ID: "Primary State Registration Number 1175000006235, Taxpayer Identification Number/Tax Registration Reason Code 5050135806/505001001, All-Russian Classifier of Enterprises and Organizations 21596050"
+    ABOUT_MORE: "More about the «National Trails» Organization"
 
-        ABOUT_TITLE: "Об Организации"
-        ABOUT: "Автономная некоммерческая организация становления и развития Системы Национальных Троп (АНО «Национальные Тропы»)&nbsp;— мы изучаем Реки и Территории России. Участвуем в создании Системы Национальных Троп России. Спонсируем деятельность путешественников-исследователей"
-        ABOUT_ID: "ОГРН 1175000006235, ИНН/КПП 5050135806/505001001, ОКПО 21596050"
-        ABOUT_MORE: "Подробно об Организации «Национальные Тропы» России"
+    FOOTER:
+      TITLE: "Nonprofit organization «National Trails» of the Russia"
+      LANG_TO: "Switch to Russian"
+      LANG_FROM: "You are currently viewing English version"
+      OUR_WORK: "Our Work"
+      SLOGAN: "«The very reason for Nature’s existence is for the Education of the Soul»"
+      LICENSE: "Content is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License"
+      MADE_WITH: "Made with Effort, Hopes and"
+        
+    SUBSCRIBE:
+      TITLE: "Subscribe"
+      EMAIL: "Your email"
+      SUBMIT: "Stay in Touch"
 
+    CONTACTS:
+      TITLE: "Contacts"
+      ADDRESS: "Russia, 141190, Moscow&nbsp;region, City of Science Fryazino, Vokzalnaya&nbsp;street, 19,&nbsp;82"
+      PR: "External Relations and Communications: Zoya&nbsp;Sokolova"
+      WEB: "Publications: Oleg Davydov"
+      CEO: "Main requests: Kirill Aristov"
+      GIT: "Our GitHub account"
 
-        HOME_PAGE: "Главная страница"
-        LANG_TO: "Change Language to English"
-        LANG_FROM: "&nbsp;На&nbsp;русском"
+    dateLastEdited: "January 2, 2006 at 15:04"
+    datePosted: "January 2, 2006. 15:04"
 
-        LAST_EDITED: "Эта страница последний раз была отредактирована"
-        EDIT_THIS_PAGE: "Редактировать страницу"
-        EDIT_THIS_PAGE_TITLE: "Эту страницу можно изменять. О том, как вносить изменения — на странице «Как внести вклад»"
+    CONTENTS: "Contents"    
+    READ_MORE: "Read More…"
+    FEED: "Feed"
+    NEWER: "Newer"
+    OLDER: "Older"
+    PREVIOUS: "Previous"
+    NEXT: "Next page"
+    ON_FIRST: "On first page"
+    ON_LAST: "On last page"
+    DATE: "Date"
+    LOCATION: "Location"
+    COORDINATES: "Coordinates"
+    TAGS: "Tags"
 
-        PAGE: "Страница"
-        SCROLL_UP: "Наверх"
+    HOME_PAGE: "Home Page"
+    LANG_TO: "Изменить язык на русский"
+    LANG_FROM: "&nbsp;In&nbsp;English"
 
-        FOOTER:
-            TITLE: "АНО «Национальные Тропы» России"
-            LANG_TO: "Переключить на английский"
-            LANG_FROM: "Вы просматриваете русскоязычную версию"
-            OUR_WORK: "Деятельность"
-            SLOGAN: "«Сама причина существования Природы — воспитание Души»"
-            LICENSE: "Содержание доступно по лицензии Creative Commons «Атрибуция — На тех же условиях» 4.0 Всемирная"
-            MADE_WITH: "Сделано с усердием, надеждами и"
-            
-        SUBSCRIBE:
-            TITLE: "Подпишитесь"
-            EMAIL: "Ваша почта"
-            SUBMIT: "Оставаться на связи"
-            
-        CONTACTS:
-            TITLE: "Контакты"
-            ADDRESS: "Россия, 141190, Московская&nbsp;область, Наукоград&nbsp;Фрязино, улица&nbsp;Вокзальная, 19,&nbsp;82"
-            PR: "Внешние связи и коммуникации: Зоя&nbsp;Соколова"
-            WEB: "Публикации: Олег&nbsp;Давыдов"
-            CEO: "Общие вопросы: Кирилл Аристов"
-            GIT: "Наш GitHub аккаунт"
+    LAST_EDITED: "This page was last edited on"
+    PUBLISHED: "This page was created on"
+    EDIT_THIS_PAGE: "Edit this page"
+    EDIT_THIS_PAGE_TITLE: "You can edit this page. About how to make changes — on the «How to Contribute» page"
+
+    PAGE: "Page"
+    SCROLL_UP: "Scroll Up"
+
+  ru:
+    weight: 1
+
+    title: "Национальные Тропы России"
+    description: "Национальные Тропы России"
+    keywords: "Национальные Тропы, экспедиции, приключения, душа, природа, дикая природа, исследования, образование, обучение"
+    author: "Некоммерческая организация Национальные Тропы, Россия"
+    generator: "Effort, Hopes and Love"
+
+    ABOUT_TITLE: "Об Организации"
+    ABOUT: "Автономная некоммерческая организация становления и развития Системы Национальных Троп (АНО «Национальные Тропы»)&nbsp;— мы изучаем Реки и Территории России. Участвуем в создании Системы Национальных Троп России. Спонсируем деятельность путешественников-исследователей"
+    ABOUT_ID: "ОГРН 1175000006235, ИНН/КПП 5050135806/505001001, ОКПО 21596050"
+    ABOUT_MORE: "Подробно об Организации «Национальные Тропы» России"
+
+    FOOTER:
+      TITLE: "АНО «Национальные Тропы» России"
+      LANG_TO: "Переключить на английский"
+      LANG_FROM: "Вы просматриваете русскоязычную версию"
+      OUR_WORK: "Деятельность"
+      SLOGAN: "«Сама причина существования Природы — воспитание Души»"
+      LICENSE: "Содержание доступно по лицензии Creative Commons «Атрибуция — На тех же условиях» 4.0 Всемирная"
+      MADE_WITH: "Сделано с усердием, надеждами и"
+
+    SUBSCRIBE:
+      TITLE: "Подпишитесь"
+      EMAIL: "Ваша почта"
+      SUBMIT: "Оставаться на связи"
+
+    CONTACTS:
+      TITLE: "Контакты"
+      ADDRESS: "Россия, 141190, Московская&nbsp;область, Наукоград&nbsp;Фрязино, улица&nbsp;Вокзальная, 19,&nbsp;82"
+      PR: "Внешние связи и коммуникации: Зоя&nbsp;Соколова"
+      WEB: "Публикации: Олег&nbsp;Давыдов"
+      CEO: "Общие вопросы: Кирилл Аристов"
+      GIT: "Наш GitHub аккаунт"
+
+    dateLastEdited: "2 January 2006 в 15:04"
+    datePosted: "2 January 2006, 15:04"
+
+    CONTENTS: "Содержание"
+    READ_MORE: "Читать далее…"
+    FEED: "Трансляция"
+    NEWER: "Раньше"
+    OLDER: "Позже"
+    PREVIOUS: "Предыдущая"
+    NEXT: "Следующая"
+    ON_FIRST: "На первой странице"
+    ON_LAST: "На последней странице"
+    DATE: "Дата"
+    LOCATION: "Место"
+    COORDINATES: "Координаты"
+    TAGS: "Метки"
+
+    HOME_PAGE: "Главная страница"
+    LANG_TO: "Change Language to English"
+    LANG_FROM: "&nbsp;На&nbsp;русском"
+
+    LAST_EDITED: "Эта страница последний раз была отредактирована"
+    PUBLISHED: "Эта страница была создана"
+    EDIT_THIS_PAGE: "Редактировать страницу"
+    EDIT_THIS_PAGE_TITLE: "Эту страницу можно изменять. О том, как вносить изменения — на странице «Как внести вклад»"
+
+    PAGE: "Страница"
+    SCROLL_UP: "Наверх"

@@ -1,5 +1,12 @@
 ---
-title: 'Our Services'
+title: "Our Services"
+menu:
+  middle:
+    name: Services
+    weight: 7
+  bottom:
+    name: Services
+    weight: 7
 ---
 
 ## Разработка проектов по благоустройству познавательных троп

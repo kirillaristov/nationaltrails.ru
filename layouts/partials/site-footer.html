@@ -13,38 +13,43 @@
 {{/* Line */}}
 
 <footer id="footer">
+
 <div id="footer-header">
-  <p><a href="/{{ .Lang }}/" title="{{ .Site.Title }}">{{ .Site.Params.FOOTER.TITLE }}</a>. 2005—{{ now.Year }}.</p>
+  <p>{{ .Site.Params.FOOTER.TITLE }}. 2017—{{ now.Year }}.</p>
   <a id="scrollup" href="#"><span>{{ .Site.Params.SCROLL_UP }}</span></a>
   <p id="footer-lang">{{ .Site.Params.FOOTER.LANG_FROM }}. <a href="{{ $url2 }}{{ with $pageNumber }}{{ if gt $pageNumber 1 }}page/{{ . }}/{{end}}{{end}}" hreflang="{{ $lang2 }}">{{ .Site.Params.FOOTER.LANG_TO }}</a>.</p>
 </div>
+
 <div id="footer-center">
+	<div id="footer-menu">
+		<h3>{{ .Site.Params.FOOTER.OUR_WORK }}</h3>
+		{{ partial "menu-bottom.html" . }}
+  </div>
+  
   <div id="footer-briefly">
     <h3>{{ .Site.Params.ABOUT_TITLE }}</h3>
     <p>{{ .Site.Params.ABOUT }}</p>
     <p><a href="/{{ .Lang }}/about/">{{ .Site.Params.ABOUT_MORE }}</a>.</p>
+    
+    <h3><a href="/{{ .Lang }}/rss.xml">RSS</a></h3>
   </div>
+  
   <div id="footer-contacts">
     <h3>{{ .Site.Params.CONTACTS.TITLE }}</h3>
     <p id="address">{{ .Site.Params.CONTACTS.ADDRESS | safeHTML }}.</p>
     <p id="email">
-    {{ .Site.Params.CONTACTS.CEO }}, <a href="mailto:kir@kirillaristov.com">kir@kirillaristov.com</a><br>
-    <a href="tel:+79256135850">+7 925 613-58-50</a>
+      — {{ .Site.Params.CONTACTS.PR  | safeHTML }}, <a href="mailto:pr@nationaltrails.ru">pr@nationaltrails.ru</a><br>
+      — {{ .Site.Params.CONTACTS.WEB  | safeHTML }}, <a href="mailto:web@nationaltrails.ru">web@nationaltrails.ru</a><br>
+      — {{ .Site.Params.CONTACTS.CEO  | safeHTML }}, <a href="mailto:ceo@nationaltrails.ru">ceo@nationaltrails.ru</a><br>
+      — {{ .Site.Params.CONTACTS.GIT  | safeHTML }}: <a rel="nofollow" target="_blank" href="https://github.com/nationaltrails-ru">github.com/nationaltrails-ru</a>
     </p>
-
-    <h3><a href="/{{ .Lang }}/rss.xml">RSS</a></h3>
-    
-    <!-- <h3>{{ .Site.Params.SUBSCRIBE.TITLE }} <sup><small>[<a href="/{{ .Lang }}/blog/rss.xml">RSS</a>]</small></sup></h3>
-    <form id="subscribeform" name="subscribeform" method="post">				
-    <div><input type="email" class="email" name="email" size="53" minlength="8" maxlength="100" placeholder="{{ .Site.Params.SUBSCRIBE.EMAIL }}" required></div>
-    <div><input type="hidden" name="lang" value="{{ .Lang }}"></div>
-    <p><input type="submit" id="submit" value="{{ .Site.Params.SUBSCRIBE.SUBMIT }}"></p>
-    </form> -->
   </div>
 </div>
+
 <div class="footer-bottom">
   <p>{{ .Site.Params.FOOTER.SLOGAN }}</p>
-  <p>{{ .Site.Params.FOOTER.TITLE }}. 2005—{{ now.Year }}</p>
+  <p>{{ .Site.Params.FOOTER.TITLE }}. 2017—{{ now.Year }}</p>
+  <p class="footer__made-with">{{ .Site.Params.FOOTER.MADE_WITH }} <span>{{ partial "svg/heart.svg" }}</span></p>
   <p class="footer__license"><a href="/{{ .Lang }}/license/">{{ .Site.Params.FOOTER.LICENSE }}</a></p>
 </div>
 </footer>

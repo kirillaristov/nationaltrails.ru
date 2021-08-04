@@ -1,5 +1,12 @@
 ---
 title: Trails
+menu:
+  middle:
+    name: Trails
+    weight: 3
+  bottom:
+    name: Trails
+    weight: 3
 ---
 
 ## [Volga river blue trail: The Great Adventure](/trails/volga-river-blue-trail)

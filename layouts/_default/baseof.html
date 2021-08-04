@@ -27,7 +27,7 @@
 <meta name="description" content="{{ .Description | default .Site.Params.description}}">
 <meta name="keywords" content="{{ delimit .Keywords " " | default .Site.Params.keywords}}">
 
-{{ partial "get-opengraph" . }}
+{{ partial "get-opengraph.html" . }}
 
 <link rel="canonical" href="{{ .Permalink }}">
 <link rel="alternate" hreflang="x-default" href="{{ .Site.BaseURL }}">
@@ -54,8 +54,14 @@
   {{- end }}
 
 <div class="content"> 
+  <div class="top-bar">
+    {{ partial "github.html" }}
 
-  {{- if not .IsHome }}{{ partial "breadcrumbs.html" . }}{{ end }}
+    <div class="breadcrumbs__wrapper">
+      {{- if not .IsHome }}{{ partial "breadcrumbs.html" . }}{{ end }}
+    </div>
+  </div>			
+
 
 {{ block "main" . }}{{ end }}
 

@@ -1,0 +1,15 @@
+<nav class="menu_middle">
+<ul class="menu__content">
+
+    {{- $currentPage := . }} 
+    {{- range .Site.Menus.middle }}
+    
+    {{- if ($currentPage.IsMenuCurrent "middle" .) -}}
+    <li class="active"><span>{{ .Name }}</span></li>
+    {{- else -}}
+    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+    {{- end }}
+    {{- end }}
+    
+</ul>
+</nav>

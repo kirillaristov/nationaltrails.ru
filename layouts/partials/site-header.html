@@ -2,7 +2,7 @@
 	<div class="header-row row1">
 		<div class="header-row__content">
 		
-		{{ partial "menu.html" . }}
+		{{ partial "menu-top.html" . }}
 
 		{{ partial "lang-changer.html" . }}
 
@@ -13,12 +13,12 @@
 	<div class="header-row row2">
 		<div class="header-row__content">
 		
-			<a class="home" href="/html_lang" title="SITE.HOME_PAGE">{{ partial "svg/logo.svg" }}</a>
+			<a class="home" href="/{{ .Lang }}" title="{{ .Site.Params.HOME_PAGE }}">{{ partial "svg/logo.svg" }}</a>
 		
 			<div class="row2 column2">
-				<h1 class="header__site-name"><a title="SITE.HOME_PAGE" href="/html_lang">SITE.TITLE</a></h1>
+				<h1 class="header__site-name"><a title="{{ .Site.Params.HOME_PAGE }}" href="/{{ .Lang }}">{{ .Site.Params.TITLE }}</a></h1>
 
-				{{ partial "menu.html" . }}
+				{{ partial "menu-middle.html" . }}
 
 			</div>
 

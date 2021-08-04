@@ -1,0 +1,15 @@
+<nav class="menu_bottom">
+<ul class="menu__content">
+
+    {{- $currentPage := . }} 
+    {{- range .Site.Menus.bottom }}
+    
+    {{- if ($currentPage.IsMenuCurrent "bottom" .) -}}
+    <li class="active"><span>{{ .Name }}</span></li>
+    {{- else -}}
+    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+    {{- end }}
+    {{- end }}
+    
+</ul>
+</nav>

@@ -1,5 +1,12 @@
 ---
-title: 'Glossary about the trails'
+title: "Glossary about the trails"
+menu:
+  middle:
+    name: Glossary
+    weight: 9
+  bottom:
+    name: Glossary
+    weight: 9
 ---
 
 ## Trails

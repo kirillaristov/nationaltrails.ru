@@ -1,5 +1,12 @@
 ---
 title: Тропы
+menu:
+  middle:
+    name: Тропы
+    weight: 3
+  bottom:
+    name: Тропы
+    weight: 3
 ---
 
 ## [Тропа реки Волга: Большое Приключение](/trails/volga-river-blue-trail)

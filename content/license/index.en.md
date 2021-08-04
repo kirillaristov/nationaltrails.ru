@@ -1,6 +1,6 @@
 ---
-title: 'Terms of use'
-robots: 'noindex,nofollow'
+title: "Terms of use"
+robots: "noindex,nofollow"
 ---
 
 This is a human-readable summary of (and not a substitute for) the full license [below](#legal-code).<br>

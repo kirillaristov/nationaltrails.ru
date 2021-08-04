@@ -1,6 +1,6 @@
 ---
-title: 'Условия использования'
-robots: 'noindex,nofollow'
+title: "Условия использования"
+robots: "noindex,nofollow"
 ---
 
 Это легко доступное для понимания краткое изложение юридического текста полной лицензии Creative Commons «С&nbsp;указанием авторства — С&nbsp;сохранением условий» версии 4.0 Международная, [приведённого далее](#legal-code) и не заменяющее его. Источник — [creativecommons.org/licenses/by-sa/4.0/deed.ru](https://creativecommons.org/licenses/by-sa/4.0/deed.ru).
