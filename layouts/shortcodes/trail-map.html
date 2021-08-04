@@ -2,16 +2,13 @@
 
 {{ $filepath := printf "/static/static/trails/%s/tracks/" $trail }}
 
-<!-- https://nationaltrails.ru/user/pages/02.trails/the-first-settlers-trail/tracks/2018-08-08-23-59/the-first-settlers-trail.kml -->
-
 {{ $files := sort (readDir $filepath) "Name" "desc" }}
 {{ $last_track := "" }}
 {{ range first 1 $files }}
   {{ $last_track = .Name }}
 {{ end }}
 
-{{/* $fileurl := printf "%s/static/trails/%s/tracks/%s/%s.kml" .Site.Params.host $trail $last_track $trail */}}
-{{ $fileurl := printf "%s/user/pages/02.trails/%s/tracks/%s/%s.kml" .Site.Params.host $trail $last_track $trail }}
+{{ $fileurl := printf "%s/static/trails/%s/tracks/%s/%s.kml" .Site.Params.host $trail $last_track $trail }}
 
 <div class="map" id="{{ printf "map-%s" $trail | safeHTMLAttr }}"></div>
 <script>
