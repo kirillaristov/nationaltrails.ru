@@ -13,7 +13,7 @@ We create the National Trails System. We explore the Rivers and Territories of R
 
 *Nonprofit organization for the creation and development of the National Trails System «National Trails»* was formed October 10, 2017. The Founder – [Kirill Aristov](https://kirillaristov.com).
 
-<p>Base camp: {{ "SITE.CONTACTS.ADDRESS"|t }}.</p>
+<p>Base camp: Russia, 141190, Moscow&nbsp;region, City of Science Fryazino, Vokzalnaya&nbsp;street, 19,&nbsp;82.</p>
 
 <small>[Primary State Registration Number](ogrn-nonprofit-nationaltrails-russia.pdf?target=_blank) 1175000006235, [Taxpayer Identification Number](inn-nonprofit-nationaltrails-russia.pdf?target=_blank)/Tax Registration Reason Code 5050135806/505001001, All-Russian Classifier of Enterprises and Organizations 21596050, [Articles of organization](ustav-nonprofit-nationaltrails-russia.pdf?target=_blank).</small>
 

@@ -14,13 +14,12 @@ h4 {font:normal 15px/20px cuprum,serif;}
 
 h1,h2,h3, .breadcrumbs {color:#212529;}
 
-p  		{word-break:keep-all;}
+p {word-break:keep-all;}
 
 .content h1 {margin:30px 0 16px;padding-bottom:7px;border-bottom:1px solid #eaecef;}
 .content h2 {margin-bottom:16px;padding:20px 0 2px;border-bottom:1px solid #eaecef;}
 .content h2.content__title {margin-bottom:16px;padding-top:0;border-bottom:none;}
 .content h2.blog__title {padding-top:0;}
-.content h2.post__title {padding-top:0;}
 .content div.post__date {padding-top:25px;font-size:.8em;}
 .content div.prev-next-navigation {padding-top:20px;}
 .content h3, .content h4 {clear:both;margin-bottom:12px;padding-top:20px;}
@@ -32,11 +31,10 @@ p  		{word-break:keep-all;}
 .content ul > li:not(:last-child) {margin-bottom:5px;}
 .content ul > li:last-child > p {margin-bottom:0;}
 
-.content p:not(.intro) {margin-bottom:15px;padding-bottom:10px;}
+.content p {margin-bottom:15px;padding-bottom:10px;}
 
 .content p+blockquote {margin-top:25px;}
 .content p.last-edited {margin-top:50px;margin-bottom:0;}
-
 
 h3 + small {display:block;margin-top:-7px;}
 
@@ -47,8 +45,6 @@ abbr, acronym {cursor:help;}
 nav.slave {margin-bottom:30px;}
 
 img {overflow:hidden;border:none;vertical-align:middle;}
-
-
 
 small, .small	{font-size:0.8em;}
 iframe	{vertical-align:middle;border:none;background-color:#7b90fd;}
@@ -73,34 +69,34 @@ ul		{list-style-type:none;}
 
 /* ССЫЛКИ -----------------------------------------*/
 /* ССЫЛКИ -----------------------------------------*/
-a			{text-decoration:none;}
-.link, a:link		{color:#1a69a1;border-color:#1a69a1;}
-.link:hover, a:hover		{color:#8f53fd;border-color:#8f53fd;}
-a:active		{color:#1a69a1;border-color:#1a69a1;outline:1px dotted #3a3a3a;}
-a:visited	{color:#1a69a1;border-color:#1a69a1;}
+a {text-decoration:none;}
+.link, a:link {color:#1a69a1;border-color:#1a69a1;}
+.link:hover, a:hover {color:#8f53fd;border-color:#8f53fd;}
+a:active {color:#1a69a1;border-color:#1a69a1;outline:1px dotted #3a3a3a;}
+a:visited {color:#1a69a1;border-color:#1a69a1;}
 
-.contents {margin-left:2em;}
-.contents li {margin-bottom:0.5em;}
-.contents a {border:none!important;}
+#TableOfContents {margin:40px 0 16px;padding-bottom:2px;border-bottom:1px solid #eaecef;}
+#TableOfContents a {border:none!important;}
+#TableOfContents ul ul {margin-left:20px;}
+
+.toc__list a {border:none!important;}
+.toc__title {font:normal 25px/33px cuprum,serif;color:#b44141;margin:40px 0 16px;padding-bottom:2px;border-bottom:1px solid #eaecef;}
 
 .underline 	{border-bottom:1px solid;}
 .dashed	{border-bottom:1px dashed;}
-.content a[href^="#"], .jlink {border-bottom:1px dashed;cursor:pointer;}
+.content a[href^="#"]:not(.anchor_heading), .jlink {border-bottom:1px dashed;cursor:pointer;}
+a.anchor_heading {color:#fff;}
+a.anchor_heading:hover {color:inherit;}
 .link {cursor:pointer;}
 
 a[target="_blank"], a.external	{cursor:url("data:image/x-icon;base64,AAACAAEAICAQAAwABQDoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAgAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAACAAAAAgIAAgAAAAIAAgACAgAAAwMDAAICAgAAAAP8AAP8AAAD//wD/AAAA/wD/AP//AAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////8AAAAAAAAAAAAAAADwAAD/AAAAAAAAAAAAAAAP8P/w/wAAAAAAAAAAAAAAD/D5kP/wAAAAAAAAAAAAAP/w+Zn58AAAAAAAAAAAAAD/8ACZmf8AAAAAAAAAAAAP////+Zn/AAAAAAAAAAAADw///5mZ/wAAAAAAAAAAAP8P//////8AAAAAAAAAAA//D///////AAAAAAAAAAAP8A/////w/wAAAAAAAAAAAAAP8P8P8P8AAAAAAAAAAAAAD/D/D/DwAAAAAAAAAAAAAA/w/w/wAAAAAAAAAAAAAAAP8P8AAAAAAAAAAAAAAAAAD/AAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAD/AAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD////////////////////////////4Af//+AH///gB///wAf//8AD//+AA///gAH//wAB//8AAf/+AAH//AAB//wAAf/8QAH//8AD///AB///wB///8D////D////w////8P////D////5/////////////////////////////w=="), auto;}
 
 
-/* Разные цвета border для разных страниц ------- */
-
-
 /* --- ШАБЛОН ---------------------- */
 /* --- ШАБЛОН ---------------------- */
 /* --- ШАБЛОН ---------------------- */
-.main {/*display:flex;flex-direction:column;align-items:center;*/}
 .content {max-width:1000px;margin:0 auto;padding:35px 30px 40px 30px;}
-.template-blog-item .intro {margin-top:25px;}
-#map {width:100%;width:calc(100% + 60px);min-width:200px;height:400px;margin:20px -30px 35px;background-color:#d3e3fc;}
+.map {width:100%;width:calc(100% + 60px);min-width:200px;height:400px;margin:20px -30px 35px;background-color:#d3e3fc;}
 
 .content img {max-width:100%;height:auto;}
 
@@ -155,6 +151,14 @@ h1.header__site-name {color:#1a69a1;}
 .menu_middle > ul > li {flex-shrink:0;}
 .menu_middle > ul > li:not(:last-child) {padding-right:25px;}
 /* --- </MENU> --- */
+
+/* --- Blog --- */
+p.blog__rss-link {margin-top:20px;margin-bottom:0;padding-bottom:0;}
+ul.blogcontent {list-style-type:none;margin-left:0;margin-bottom:0;padding-bottom:0;}
+ul.blogcontent li {margin-bottom:50px;}
+.post__date + h2.post__title  {padding-top:0;}
+.read-all-blog {font-size:1.2em;}
+/* --- Blog --- */
 
 
 /* --- Media --- */
@@ -232,34 +236,6 @@ p.media__tag-list {margin-top:35px;word-spacing:7px;}
 .footer__license {margin-top:10px;}
 
 
-/* ФОРМА ПОДПИСКИ ------------------------------ */
-/* ФОРМА ПОДПИСКИ ------------------------------ */
-#subscribeform input[type="email"] {border:1px solid #aa8ed6;border-radius:3px;width:100%;box-sizing:border-box;}
-#subscribeform input[type="email"]:focus {border-color:#ffac33;}
-#subscribeform #submit {cursor:pointer;padding:7px 12px;border:1px solid #357ebd;border-radius:4px;background-color:#ffac33;}
-#subscribeform #submit:not([disabled]):hover,
-#subscribeform #submit:not([disabled]):focus,
-#subscribeform #submit:not([disabled]):active {background-color:#5169d1;border-color:#285e8e;color:#fff;}
-#subscribeform #submit:not([disabled]):focus,
-#subscribeform #submit:not([disabled]):active {outline:thin dotted;outline-offset:-2px;}
-#subscribeform #submit:disabled {outline:none;background-color:#b0b6bc;cursor:default;}
-#subscribeform p {margin-top:20px;line-height:25px;text-indent:2px;}
-
-
-/* BLOG --- */
-#blogcontent {list-style-type:none;margin-left:0;}
-#blogcontent li {margin-bottom:50px;}
-
-
-#blog-paginator-wrapper {border-top:5px solid #bdbadd;margin:0 0 48px;}
-#blog-paginator-items {margin-top:-5px;text-align:center;}
-#blog-paginator-items a {color:#2b2b2b;}
-#blog-paginator-items a:hover {border-top:5px solid #1651f9;background-color:#bdbadd50;border-radius:0 0 5px 5px;}
-#blog-paginator-items .page-numbers {border-top:5px solid transparent;display:inline-block;font-size:18px;margin-right:1px;padding:7px 16px;text-transform:uppercase;}
-#blog-paginator-items .current {border-top:5px solid #1651f9;}
-#blog-paginator-items .dots {padding:7px 0;}
-
-
 /** gallery **/
 /** gallery **/
 /** gallery **/
@@ -286,12 +262,6 @@ p.media__tag-list {margin-top:35px;word-spacing:7px;}
 /** end gallery **/
 /** end gallery **/
 /** end gallery **/
-
-
-/** media gallery **/
-.template-media-item img.media-item {display:block;}
-/** media gallery **/
-
 
 
 /* --- Responsive design --- */
@@ -341,9 +311,7 @@ p.media__tag-list {margin-top:35px;word-spacing:7px;}
 	.menu__content {font-size:15px;}
 	.row2 .header__icon-lang {font-size:15px;}	
 	
-	#blogcontent li {margin-bottom:40px;}
-	
-	#blogtitle {margin-top:10px;}
+	.blogcontent li {margin-bottom:40px;}
 	
 	.full-image > figure > figcaption {padding:20px;}
 	figcaption .title {font-size:16px;line-height:22px;}

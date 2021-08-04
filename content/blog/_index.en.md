@@ -1,5 +1,5 @@
 ---
-title: Blog
+title: Our Blog
 menu:
   middle:
     name: Blog

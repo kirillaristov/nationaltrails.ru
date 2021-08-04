@@ -1,11 +1,13 @@
 {{ define "main" }}
 
+<h2 class="post__title">{{ with partial "get-title.html" . }}{{ . }}{{ end }}</h2>
+
 <ul class="blogcontent">
   {{- range .Paginator.Pages }}
   <li>
+    {{ partial "get-date.html" . }}
     <h2 class="post__title"><a href="{{ .RelPermalink }}">{{ with partial "get-title.html" . }}{{ . }}{{ end }}</a></h2>
 
-    {{ partial "get-date.html" . }}
     {{ partial "get-post-coord.html" . }}
 
     {{- with partial "get-images.html" . }}   
@@ -24,5 +26,7 @@
 </ul>
 
 {{- partial "pagination.html" . }}
+
+<p class="blog__rss-link"><small>{{ .Site.Params.FEED }}: <a href="/{{ .Lang }}/rss.xml">RSS</a></small></p>
 
 {{- end }}

@@ -21,7 +21,7 @@ Trails — is an Education, Nature and a Soul.
 
 Словно гигантское дерево, раскинула Волга по Русской равнине свои ветви-притоки. Почти полтора миллиона квадратных километров захватила она в черту своего бассейна. Зародившись небольшим ручьем в центре Валдайской возвышенности, Волга на пути к морю принимает дань от многочисленных притоков и превращается в могучую реку, самую большую во всей Европе.
 
-{% include "includes/trail-map.html.twig" with {'trail': 'volga-river-blue-trail'} %}
+{{< trail-map "volga-river-blue-trail" >}}
 
 
 ## [The First Settlers Historic Trail](/en/trails/the-first-settlers-trail/)
@@ -30,23 +30,4 @@ The trail starts in the European part of Russia and heading East, the path of th
 
 The trail passes along the rivers Volga, Kama, Tagil, Tobol, Irtysh, Ob, Tom, Abakan, Yenisei, Angara, Lena, Olekma, Zeya, Amur, Indigirka.
 
-{% include "includes/trail-map.html.twig" with {'trail': 'the-first-settlers-trail'} %}
-
-
-## [Our Blog](/en/blog/) <sup><small>{{ header.content.limit }} last messages of {{ page.find('/blog').children|length }}</small></sup>
-
-{% set collection = page.collection %}
-
-<ul id="blogcontent">
-{% for child in collection %}
-	<li>	
-		<p class="intro"><small>{{ child.slug|regex_replace('/\-([0-9]{2})$/', ':$1')|localizeddate('long', 'short', 'en', 'UTC') }} UTC</small></p>
-
-		<h2><a href="{{ child.url }}">{{ child.title }}</a></h2>
-
-		{{ child.content }}
-	</li>
-{% endfor %}
-</ul>
-
-### [read all posts: {{ page.find('/blog').children|length }}](/en/blog/)
+{{< trail-map "the-first-settlers-trail" >}}

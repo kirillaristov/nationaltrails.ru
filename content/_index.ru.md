@@ -21,7 +21,7 @@ menu:
 
 Словно гигантское дерево, раскинула Волга по Русской равнине свои ветви-притоки. Почти полтора миллиона квадратных километров захватила она в черту своего бассейна. Зародившись небольшим ручьем в центре Валдайской возвышенности, Волга на пути к морю принимает дань от многочисленных притоков и превращается в могучую реку, самую большую во всей Европе.
 
-{% include "includes/trail-map.html.twig" with {'trail': 'volga-river-blue-trail'} %}
+{{< trail-map "volga-river-blue-trail" >}}
 
 
 ## [Историческая: Тропа Первых Переселенцев](/ru/trails/the-first-settlers-trail/)
@@ -30,23 +30,4 @@ menu:
 
 Тропа проходит по рекам Волга, Кама, Тагил, Тобол, Иртыш, Обь, Томь, Абакан, Енисей, Ангара, Лена, Олёкма, Зея, Амур, Охотское море, Индигирка, Восточно-Сибирское море, мыс Дежнёва. Протяжённость Тропы 21000 км, на её прохождение требуется не менее 4 лет.
 
-{% include "includes/trail-map.html.twig" with {'trail': 'the-first-settlers-trail'} %}
-
-
-## [Наш Блог](/ru/blog/) <sup><small>{{ header.content.limit }} последних сообщений из {{ page.find('/blog').children|length }}</small></sup>
-
-{% set collection = page.collection %}
-
-<ul id="blogcontent">
-{% for child in collection %}
-	<li>	
-		<p class="intro"><small>{{ child.slug|regex_replace('/\-([0-9]{2})$/', ':$1')|localizeddate('long', 'short', 'ru', 'UTC') }} UTC</small></p>
-
-		<h2><a href="{{ child.url }}">{{ child.title }}</a></h2>
-
-		{{ child.content }}
-	</li>
-{% endfor %}
-</ul>
-
-### [читать все записи: {{ page.find('/blog').children|length }}](/ru/blog/)
+{{< trail-map "the-first-settlers-trail" >}}

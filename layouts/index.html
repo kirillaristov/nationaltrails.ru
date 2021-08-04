@@ -7,8 +7,8 @@
 <ul class="blogcontent">
 {{ range first 5 (where .Site.Pages "Section" "blog") }}
 <li>
-<h2 class="post__title"><a href="{{ .RelPermalink }}">{{ with partial "get-title.html" . }}{{ . }}{{ end }}</a></h2>
 {{ partial "get-date.html" . }}
+<h2 class="post__title"><a href="{{ .RelPermalink }}">{{ with partial "get-title.html" . }}{{ . }}{{ end }}</a></h2>
 {{- partial "get-post-coord.html" . }}
 
 {{- with partial "get-images.html" . }}   
@@ -26,6 +26,6 @@
 {{ end }}
 </ul>
 
-<div class="read-more"><a href="/{{ .Lang }}/blog/">{{ .Site.Params.READ_MORE }}</a></div>
+<div class="read-all-blog"><a href="/{{ .Lang }}/blog/">{{ .Site.Params.READ_ALL_BLOG }}: {{ len (where .Site.RegularPages "Section" "=" "blog") }}</a></div>
 
 {{- end }}

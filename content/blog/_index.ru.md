@@ -1,5 +1,5 @@
 ---
-title: Блог
+title: Наш Блог
 menu:
   middle:
     name: Блог

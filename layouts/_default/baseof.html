@@ -57,17 +57,12 @@
   <div class="top-bar">
     {{ partial "github.html" }}
 
-    <div class="breadcrumbs__wrapper">
-      {{- if not .IsHome }}{{ partial "breadcrumbs.html" . }}{{ end }}
-    </div>
+    {{ if not .IsHome }}{{ partial "breadcrumbs.html" . }}{{ end }}
   </div>			
-
 
 {{ block "main" . }}{{ end }}
 
-  {{- if not .IsHome }}
-    {{- partial "get-last-edited.html" . }}
-  {{- end }}
+  {{ if not .IsHome }}{{ partial "get-last-edited.html" . }}{{ end }}
 </div>
 </main>
 

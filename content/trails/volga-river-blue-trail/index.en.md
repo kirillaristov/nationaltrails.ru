@@ -12,4 +12,4 @@ keywords: "trail, Volga, Russia"
 
 ## Trail on the map
 
-{% include "includes/trail-map.html.twig" with {'trail': 'volga-river-blue-trail'} %}
+{{< trail-map "volga-river-blue-trail" >}}

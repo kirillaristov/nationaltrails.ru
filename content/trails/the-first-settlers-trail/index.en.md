@@ -12,7 +12,7 @@ keywords: "trail, settlers, Russia"
 
 ## The First Settlers Trail map
 
-{% include "includes/trail-map.html.twig" with {'trail': 'the-first-settlers-trail'} %}
+{{< trail-map "the-first-settlers-trail" >}}
 
 
 
@@ -41,7 +41,7 @@ keywords: "trail, settlers, Russia"
 
 <small>_Ключевский Василий Осипович «Курс русской истории», Лекция IV. 1904 год._</small>
 
-![](severnyy-kray-sibirskaya-reka-apollinariy-mikhaylovich-vasnetsov.jpg)
+![](/static/trails/the-first-settlers-trail/severnyy-kray-sibirskaya-reka-apollinariy-mikhaylovich-vasnetsov.jpg)
 <br><small>_Васнецов Аполлинарий Михайлович «Северный край. Сибирская река». 1899 год._</small>
 
 

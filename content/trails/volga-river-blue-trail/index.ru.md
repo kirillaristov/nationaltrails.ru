@@ -12,4 +12,4 @@ keywords: "тропа, Волга, Россия"
 
 ## Тропа на карте
 
-{% include "includes/trail-map.html.twig" with {'trail': 'volga-river-blue-trail'} %}
+{{< trail-map "volga-river-blue-trail" >}}
