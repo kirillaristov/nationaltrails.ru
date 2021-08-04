@@ -84,8 +84,7 @@ By exercising the Licensed Rights (defined below), You accept and agree to be bo
 
 * l. **Sui Generis Database Rights** means rights other than copyright resulting from Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or succeeded, as well as other essentially equivalent rights anywhere in the world.
 
-*
-m. **You** means the individual or entity exercising the Licensed Rights under this Public License. Your has a corresponding meaning.
+* m. **You** means the individual or entity exercising the Licensed Rights under this Public License. Your has a corresponding meaning.
 
 
 ### 2. Scope.
@@ -109,8 +108,7 @@ m. **You** means the individual or entity exercising the Licensed Rights under t
 		* B. *Additional offer from the Licensor* – Adapted Material. Every recipient of Adapted Material from You automatically receives an offer from the Licensor to exercise the Licensed Rights in the Adapted Material under the conditions of the Adapter’s License You apply.
 		* C. *No downstream restrictions.* You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.
 
-	6.
-	**No endorsement.** Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3(a)(1)(A)(i).
+	6. **No endorsement.** Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3(a)(1)(A)(i).
 	
 * b. Other rights.
 
@@ -118,8 +116,7 @@ m. **You** means the individual or entity exercising the Licensed Rights under t
 
 	2. Patent and trademark rights are not licensed under this Public License.
 
-	3.
-	To the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rights, whether directly or through a collecting society under any voluntary or waivable statutory or compulsory licensing scheme. In all other cases the Licensor expressly reserves any right to collect such royalties.
+	3. To the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rights, whether directly or through a collecting society under any voluntary or waivable statutory or compulsory licensing scheme. In all other cases the Licensor expressly reserves any right to collect such royalties.
 
 
 ### 3. License Conditions.
@@ -140,8 +137,7 @@ Your exercise of the Licensed Rights is expressly made subject to the following 
 	
 	2. You may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.
 	
-	3.
-	If requested by the Licensor, You must remove any of the information required by Section 3(a)(1)(A) to the extent reasonably practicable.
+	3. If requested by the Licensor, You must remove any of the information required by Section 3(a)(1)(A) to the extent reasonably practicable.
 
 * b. ShareAlike.
 
@@ -151,8 +147,7 @@ Your exercise of the Licensed Rights is expressly made subject to the following 
 	
 	2. You must include the text of, or the URI or hyperlink to, the Adapter's License You apply. You may satisfy this condition in any reasonable manner based on the medium, means, and context in which You Share Adapted Material.
 	
-	3.
-	You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, Adapted Material that restrict exercise of the rights granted under the Adapter's License You apply.
+	3. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, Adapted Material that restrict exercise of the rights granted under the Adapter's License You apply.
 
 
 ### 4. Sui Generis Database Rights.
@@ -163,8 +158,7 @@ Where the Licensed Rights include Sui Generis Database Rights that apply to Your
 
 * b. if You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material, including for purposes of Section 3(b); and
 
-*
-c. You must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database.
+* c. You must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database.
 
 For the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.
 
@@ -175,8 +169,7 @@ For the avoidance of doubt, this Section 4 supplements and does not replace Your
 
 * b. TO THE EXTENT POSSIBLE, IN NO EVENT WILL THE LICENSOR BE LIABLE TO YOU ON ANY LEGAL THEORY (INCLUDING, WITHOUT LIMITATION, NEGLIGENCE) OR OTHERWISE FOR ANY DIRECT, SPECIAL, INDIRECT, INCIDENTAL, CONSEQUENTIAL, PUNITIVE, EXEMPLARY, OR OTHER LOSSES, COSTS, EXPENSES, OR DAMAGES ARISING OUT OF THIS PUBLIC LICENSE OR USE OF THE LICENSED MATERIAL, EVEN IF THE LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH LOSSES, COSTS, EXPENSES, OR DAMAGES. WHERE A LIMITATION OF LIABILITY IS NOT ALLOWED IN FULL OR IN PART, THIS LIMITATION MAY NOT APPLY TO YOU.
 
-*
-c. The disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that, to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.
+* c. The disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that, to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.
 
 
 ### 6. Term and Termination.
@@ -191,16 +184,14 @@ c. The disclaimer of warranties and limitation of liability provided above shall
 
 * c. For the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License.
 
-*
-d. Sections 1, 5, 6, 7, and 8 survive termination of this Public License.
+* d. Sections 1, 5, 6, 7, and 8 survive termination of this Public License.
 
 
 ### 7. Other Terms and Conditions.
 
 * a. The Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed.
 
-*
-b. Any arrangements, understandings, or agreements regarding the Licensed Material not stated herein are separate from and independent of the terms and conditions of this Public License.
+* b. Any arrangements, understandings, or agreements regarding the Licensed Material not stated herein are separate from and independent of the terms and conditions of this Public License.
 
 
 ### 8. Interpretation.
@@ -211,8 +202,7 @@ b. Any arrangements, understandings, or agreements regarding the Licensed Materi
 
 * c. No term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.
 
-*
-d. Nothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.
+* d. Nothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.
 
 
 ## Creative Commons Notice
