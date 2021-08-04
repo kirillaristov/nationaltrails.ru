@@ -2,14 +2,15 @@
 (c) Nonprofit organization "National Trails", Russia
 ----------------------------------------------------------------------------*/
 
-html, body, p, h1, h2, h3, h4, ul, li, blockquote {margin:0;padding:0;}
-body {overflow-x:hidden;color:#212529;background-color:#fff;font:18px/24px cuprum,serif;}
+html, body {overflow-x:hidden;}
+html, body, p, h1, h2, h3, h4, ul, li, blockquote, figure {margin:0;padding:0;}
+body {font:18px/24px cuprum,serif;color:#212529;background-color:#fff;}
 /*----------------------------------------------------------------------------
 ----------------------------------------------------------------------------*/
-h1 		{font:normal 31px/33px cuprum,serif;}
-h2 		{font:normal 25px/33px cuprum,serif;}
-h3 		{font:normal 23px/31px cuprum,serif;}
-h4		{font:normal 15px/20px cuprum,serif;}
+h1 {font:normal 31px/33px cuprum,serif;}
+h2 {font:normal 25px/33px cuprum,serif;}
+h3 {font:normal 23px/31px cuprum,serif;}
+h4 {font:normal 15px/20px cuprum,serif;}
 
 h1,h2,h3, .breadcrumbs {color:#212529;}
 
@@ -19,6 +20,9 @@ p  		{word-break:keep-all;}
 .content h2 {margin-bottom:16px;padding:20px 0 2px;border-bottom:1px solid #eaecef;}
 .content h2.content__title {margin-bottom:16px;padding-top:0;border-bottom:none;}
 .content h2.blog__title {padding-top:0;}
+.content h2.post__title {padding-top:0;}
+.content div.post__date {padding-top:25px;font-size:.8em;}
+.content div.prev-next-navigation {padding-top:20px;}
 .content h3, .content h4 {clear:both;margin-bottom:12px;padding-top:20px;}
 
 .content h2:not(.content__title) + h3 {padding-top:0;}
@@ -31,7 +35,7 @@ p  		{word-break:keep-all;}
 .content p:not(.intro) {margin-bottom:15px;padding-bottom:10px;}
 
 .content p+blockquote {margin-top:25px;}
-.content p.last-edited {margin-top:50px;}
+.content p.last-edited {margin-top:50px;margin-bottom:0;}
 
 
 h3 + small {display:block;margin-top:-7px;}

@@ -50,6 +50,6 @@
   <p>{{ .Site.Params.FOOTER.SLOGAN }}</p>
   <p>{{ .Site.Params.FOOTER.TITLE }}. 2017—{{ now.Year }}</p>
   <p class="footer__made-with">{{ .Site.Params.FOOTER.MADE_WITH }} <span>{{ partial "svg/heart.svg" }}</span></p>
-  <p class="footer__license"><a href="/{{ .Lang }}/license/">{{ .Site.Params.FOOTER.LICENSE }}</a></p>
+  <p class="footer__license">{{ .Site.Params.FOOTER.LICENSE1 }} <a href="/{{ .Lang }}/license/">{{ .Site.Params.FOOTER.LICENSE2 }}</a></p>
 </div>
 </footer>

@@ -96,7 +96,8 @@ languages:
       LANG_FROM: "You are currently viewing English version"
       OUR_WORK: "Our Work"
       SLOGAN: "«The very reason for Nature’s existence is for the Education of the Soul»"
-      LICENSE: "Content is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License"
+      LICENSE1: "Content is licensed under a"
+      LICENSE2: "Creative Commons Attribution-ShareAlike 4.0 International License"
       MADE_WITH: "Made with Effort, Hopes and"
         
     SUBSCRIBE:
@@ -161,7 +162,8 @@ languages:
       LANG_FROM: "Вы просматриваете русскоязычную версию"
       OUR_WORK: "Деятельность"
       SLOGAN: "«Сама причина существования Природы — воспитание Души»"
-      LICENSE: "Содержание доступно по лицензии Creative Commons «Атрибуция — На тех же условиях» 4.0 Всемирная"
+      LICENSE1: "Содержание доступно по лицензии"
+      LICENSE2: "Creative Commons «Атрибуция — На тех же условиях» 4.0 Всемирная"
       MADE_WITH: "Сделано с усердием, надеждами и"
 
     SUBSCRIBE:
