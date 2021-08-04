@@ -1,4 +1,4 @@
-baseURL: "https://ntr.netlify.app/"
+baseURL: "https://kirillaristov.com/"
 
 frontmatter:
   date:
@@ -38,7 +38,7 @@ disableLiveReload: true
 disableFastRender: true
 disablePathToLower: true
 enableGitInfo: true
-# removePathAccents: false
+# removePathAccents: false (remove accent or special symbols from tags and categories)
 enableRobotsTXT: true
 
 paginate: 10
@@ -79,38 +79,32 @@ languages:
   en:
     weight: 2
 
-    title: "National Trails of the Russia"
-    description: "National Trails of the Russia"
-    keywords: "National trails, expeditions, adventures, soul, nature, wilderness, exploring, education"
-    author: "National Trails nonprofit organization, Russia"
-    generator: "Effort, Hopes and Love"
+    title: "Along Bluetrails of Endless Rivers"
+    description: "Lifelong routes. Tough equipment development and testing"
+    keywords: "Kirill Aristov, Kirill from Fryazino, wild Russia, combining trips, kayak, adventure, journey, voyage, Siberia"
+    author: "Kirill Aristov, Russia, https://kirillaristov.com"
+    generator: "Effort, Hope and Love. Hugo, Github and Netlify"
 
-    ABOUT_TITLE: "About us"
-    ABOUT: "Nonprofit organization for the creation and development of the National Trails System «National Trails»&nbsp;— we explore the Rivers and Territories of Russia. Participate in the development of the National Trails System in Russia. We sponsor explorers"
-    ABOUT_ID: "Primary State Registration Number 1175000006235, Taxpayer Identification Number/Tax Registration Reason Code 5050135806/505001001, All-Russian Classifier of Enterprises and Organizations 21596050"
-    ABOUT_MORE: "More about the «National Trails» Organization"
+    ABOUT_TITLE: "Who I am"
+    ABOUT: "I develop long-distance routes In The Wild. The voyage is a tool to discover many sides of our World, to feel the Bliss once more and to understand much more human lives. I spread my ideas, because long hard Voyages are possibility to open rare human personalities, I believe best personalities."
+    ABOUT_MORE: "More about me"
 
     FOOTER:
-      TITLE: "Nonprofit organization «National Trails» of the Russia"
+      TITLE: "Kirill Aristov, Russia"
       LANG_TO: "Switch to Russian"
       LANG_FROM: "You are currently viewing English version"
-      OUR_WORK: "Our Work"
-      SLOGAN: "«The very reason for Nature’s existence is for the Education of the Soul»"
-      LICENSE: "Content is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License"
-      MADE_WITH: "Made with Effort, Hopes and"
-        
+      SLOGAN: "I am for Peace, for Freedom; Happy Smiles, Dreams coming true and Clear Blue Sky"
+      LICENSE: "Content is available under the Creative Commons Attribution-ShareAlike License"
+
     SUBSCRIBE:
-      TITLE: "Subscribe"
-      EMAIL: "Your email"
-      SUBMIT: "Stay in Touch"
+      TITLE: "Subscribe to History"
+      EMAIL: "Email"
+      SUBMIT: "Subscribe"
 
     CONTACTS:
       TITLE: "Contacts"
-      ADDRESS: "Russia, 141190, Moscow&nbsp;region, City of Science Fryazino, Vokzalnaya&nbsp;street, 19,&nbsp;82"
-      PR: "External Relations and Communications: Zoya&nbsp;Sokolova"
-      WEB: "Publications: Oleg Davydov"
-      CEO: "Main requests: Kirill Aristov"
-      GIT: "Our GitHub account"
+      ADDRESS: "Russia, 141190, Moscow&nbsp;region,<br>Science City Fryazino, Vokzalnaya&nbsp;street, 19,&nbsp;82"
+      CEO: "Kirill Aristov"
 
     dateLastEdited: "January 2, 2006 at 15:04"
     datePosted: "January 2, 2006. 15:04"
@@ -144,38 +138,32 @@ languages:
   ru:
     weight: 1
 
-    title: "Национальные Тропы России"
-    description: "Национальные Тропы России"
-    keywords: "Национальные Тропы, экспедиции, приключения, душа, природа, дикая природа, исследования, образование, обучение"
-    author: "Некоммерческая организация Национальные Тропы, Россия"
-    generator: "Effort, Hopes and Love"
+    title: "Голубыми тропинками бесконечных рек"
+    description: "Маршруты длиною в жизнь. Разработка и тестирование надёжной экипировки"
+    keywords: "Кирилл Аристов, Кирилл из Фрязино, дикая природа России, комбинированные путешествия, каяк, приключение, странствие, Сибирь"
+    author: "Кирилл Аристов, Россия, https://kirillaristov.com"
+    generator: "Стремление, Надежда и Любовь. Hugo, Github and Netlify"
 
-    ABOUT_TITLE: "Об Организации"
-    ABOUT: "Автономная некоммерческая организация становления и развития Системы Национальных Троп (АНО «Национальные Тропы»)&nbsp;— мы изучаем Реки и Территории России. Участвуем в создании Системы Национальных Троп России. Спонсируем деятельность путешественников-исследователей"
-    ABOUT_ID: "ОГРН 1175000006235, ИНН/КПП 5050135806/505001001, ОКПО 21596050"
-    ABOUT_MORE: "Подробно об Организации «Национальные Тропы» России"
+    ABOUT_TITLE: "Кто Я"
+    ABOUT: "Я разрабатываю дальние маршруты в условиях дикой природы. Странствие — это инструмент, открывающий грани нашего мира; это путь к пониманию человеческих жизней; способ почувствовать Счастье ещё один раз. Я распространяю мои идеи, потому что долгие трудные Странствия — это возможности для становления необычных людей, я верю — хороших и нужных людей."
+    ABOUT_MORE: "Подробнее обо мне"
 
     FOOTER:
-      TITLE: "АНО «Национальные Тропы» России"
+      TITLE: "Кирилл Аристов, Россия"
       LANG_TO: "Переключить на английский"
       LANG_FROM: "Вы просматриваете русскоязычную версию"
-      OUR_WORK: "Деятельность"
-      SLOGAN: "«Сама причина существования Природы — воспитание Души»"
-      LICENSE: "Содержание доступно по лицензии Creative Commons «Атрибуция — На тех же условиях» 4.0 Всемирная"
-      MADE_WITH: "Сделано с усердием, надеждами и"
+      SLOGAN: "Я за Мир, за Свободу; Счастливые улыбки, Сбывающиеся Мечты и Ясное Голубое Небо"
+      LICENSE: "Содержание доступно по лицензии Creative Commons «С указанием авторства — С сохранением условий»"
 
     SUBSCRIBE:
-      TITLE: "Подпишитесь"
-      EMAIL: "Ваша почта"
-      SUBMIT: "Оставаться на связи"
+      TITLE: "Подпишитесь на историю"
+      EMAIL: "Email"
+      SUBMIT: "Подписаться"
 
     CONTACTS:
       TITLE: "Контакты"
-      ADDRESS: "Россия, 141190, Московская&nbsp;область, Наукоград&nbsp;Фрязино, улица&nbsp;Вокзальная, 19,&nbsp;82"
-      PR: "Внешние связи и коммуникации: Зоя&nbsp;Соколова"
-      WEB: "Публикации: Олег&nbsp;Давыдов"
-      CEO: "Общие вопросы: Кирилл Аристов"
-      GIT: "Наш GitHub аккаунт"
+      ADDRESS: "Россия, 141190, Московская&nbsp;область,<br>Наукоград&nbsp;Фрязино, улица&nbsp;Вокзальная, 19,&nbsp;82"
+      CEO: "Кирилл Аристов"
 
     dateLastEdited: "2 January 2006 в 15:04"
     datePosted: "2 January 2006, 15:04"
