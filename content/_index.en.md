@@ -21,7 +21,7 @@ Trails — is an Education, Nature and a Soul.
 
 Словно гигантское дерево, раскинула Волга по Русской равнине свои ветви-притоки. Почти полтора миллиона квадратных километров захватила она в черту своего бассейна. Зародившись небольшим ручьем в центре Валдайской возвышенности, Волга на пути к морю принимает дань от многочисленных притоков и превращается в могучую реку, самую большую во всей Европе.
 
-{{< trail-map "volga-river-blue-trail" >}}
+{{< trail-map trail="volga-river-blue-trail" center="60.7,107.4" >}}
 
 
 ## [The First Settlers Historic Trail](/en/trails/the-first-settlers-trail/)
@@ -30,4 +30,4 @@ The trail starts in the European part of Russia and heading East, the path of th
 
 The trail passes along the rivers Volga, Kama, Tagil, Tobol, Irtysh, Ob, Tom, Abakan, Yenisei, Angara, Lena, Olekma, Zeya, Amur, Indigirka.
 
-{{< trail-map "the-first-settlers-trail" >}}
+{{< trail-map trail="the-first-settlers-trail" center="60.7,107.4" >}}

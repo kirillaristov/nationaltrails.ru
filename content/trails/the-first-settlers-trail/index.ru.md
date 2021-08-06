@@ -12,7 +12,7 @@ keywords: "тропа, переселенцы, Россия"
 
 ## Тропа на карте
 
-{{< trail-map "the-first-settlers-trail" >}}
+{{< trail-map trail="the-first-settlers-trail" center="60.7,107.4" >}}
 
 
 

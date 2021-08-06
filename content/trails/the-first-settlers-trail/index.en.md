@@ -12,7 +12,7 @@ keywords: "trail, settlers, Russia"
 
 ## The First Settlers Trail map
 
-{{< trail-map "the-first-settlers-trail" >}}
+{{< trail-map trail="the-first-settlers-trail" center="60.7,107.4" >}}
 
 
 

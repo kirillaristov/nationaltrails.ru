@@ -1,6 +1,42 @@
-{{/* Line */}}
+{{ $js := resources.Get "js/main.js" | fingerprint }}
+
+<script src="{{ $js.RelPermalink }}" {{ printf "integrity=%q" $js.Data.Integrity | safeHTMLAttr }}></script>
+
+
+
+{{- if .HasShortcode "trail-map" }}
 
 <script async defer src="{{ printf "%s" .Site.Params.google_map_api | safeHTMLAttr }}"></script>
 
-{{ $js := resources.Get "js/main.js" | fingerprint -}}
-<script src="{{ $js.RelPermalink }}" {{ printf "integrity=%q" $js.Data.Integrity | safeHTMLAttr }}></script>
+<script>
+  var map;
+  function initMap() {
+    var maps = document.getElementsByClassName("map");
+
+    var center, mapId = '';
+
+    for (var i=0; i<maps.length; i++) {
+      mapId = document.getElementById(maps[i].id);
+
+      center = mapId.getAttribute('data-center');
+      center = center.split(",");
+
+      map = new google.maps.Map (mapId, {
+        zoom: 15,
+        center: new google.maps.LatLng(parseFloat(center[0]), parseFloat(center[1])),
+        mapTypeId: 'terrain',
+        mapTypeControl: true,
+        zoomControlOptions: {
+          position: google.maps.ControlPosition.RIGHT_TOP
+        }
+      });
+
+      var ctaLayer = new google.maps.KmlLayer ({
+        url: mapId.getAttribute('data-track-url'),
+        map: map
+      });
+    }
+  }
+</script>
+
+{{- end }}

@@ -12,4 +12,4 @@ keywords: "тропа, Волга, Россия"
 
 ## Тропа на карте
 
-{{< trail-map "volga-river-blue-trail" >}}
+{{< trail-map trail="volga-river-blue-trail" center="60.7,107.4" >}}

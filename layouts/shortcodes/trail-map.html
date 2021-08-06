@@ -1,26 +1,19 @@
-{{ $trail := .Get 0 }}
+{{- $trail := .Get "trail" | default "the-first-settlers-trail" }}
+{{ $center := .Get "center" | default "60.7,107.4" }}
 
-{{ $filepath := printf "/static/static/trails/%s/tracks/" $trail }}
+{{- $trail_path := printf "/static/static/trails/%s/tracks/" $trail }}
 
-{{ $files := sort (readDir $filepath) "Name" "desc" }}
-{{ $last_track := "" }}
-{{ range first 1 $files }}
-  {{ $last_track = .Name }}
-{{ end }}
+{{- $trail_files := sort (readDir $trail_path) "Name" "desc" }}
 
-{{ $fileurl := printf "%s/static/trails/%s/tracks/%s/%s.kml" .Site.Params.host $trail $last_track $trail }}
+{{- if ge (len $trail_files) 1 }}
 
-<div class="map" id="{{ printf "map-%s" $trail | safeHTMLAttr }}"></div>
-<script>
-  function initMap-{{ printf "%s" $trail | safeJS }}() {
-    var map-{{ printf "%s" $trail | safeJS }} = new google.maps.Map(document.getElementById("{{ printf "map-%s" $trail | safeJS }}"), {
-      zoom: 4,
-      center: {lat: 60.7, lng: 107.4},
-      mapTypeId: "terrain"
-    });
-    var ctaLayer = new google.maps.KmlLayer({
-      url: {{ printf "%q" $fileurl | safeJS }},
-      map: map
-    });
-  }
-</script>
+  {{- $last_track := "" }}
+  {{- range first 1 $trail_files }}
+    {{- $last_track = .Name }}
+  {{- end }}
+
+  {{- $track_url := printf "%s/static/trails/%s/tracks/%s/%s.kml" .Site.Params.host $trail $last_track $trail -}}
+
+  <div class="map" id="{{ printf "map-%s" $trail | safeHTMLAttr }}" data-track-url="{{ printf "%s" $track_url | safeHTMLAttr }}" data-center="{{ printf "%s" $center | safeHTMLAttr }}"></div>
+
+{{- end }}
