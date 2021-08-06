@@ -9,7 +9,7 @@
 <li>
 {{ partial "get-date.html" . }}
 <h2 class="post__title"><a href="{{ .RelPermalink }}">{{ with partial "get-title.html" . }}{{ . }}{{ end }}</a></h2>
-{{- partial "get-post-coord.html" . }}
+{{- with partial "get-post-coord.html" . }}{{ . }}{{ end }}
 
 {{- with partial "get-images.html" . }}   
 <p class="images">
@@ -21,7 +21,7 @@
 </p>
 {{- end }}
 
-{{ partial "get-content.html" . }}
+{{- partial "get-content.html" . -}}
 </li>
 {{ end }}
 </ul>

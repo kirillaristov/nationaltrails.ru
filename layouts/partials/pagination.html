@@ -79,7 +79,7 @@
 {{- end }}
 
 {{- /* <!-- If there's more than one page --> */ -}}
-{{- if gt $paginator.TotalPages 1 }}
+{{- if gt $paginator.TotalPages 1 -}}
 
 <nav class="pagination" role="navigation" aria-label="pagination">
 
@@ -93,7 +93,7 @@
         <a class="pagination-next" href="{{ $paginator.Next.URL }}">{{ .Site.Params.NEXT }}</a>
     {{- else }}
         <a class="pagination-next disabled" title="{{ .Site.Params.ON_LAST }}">{{ .Site.Params.NEXT }}</a>
-    {{- end }}
+    {{- end -}}
 
     <ul class="pagination-list">
 

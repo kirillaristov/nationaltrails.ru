@@ -12,8 +12,6 @@
 {{- end -}}
 
 <div class="header__icon-lang">
-  <a title="{{ .Site.Params.LANG_TO }}" href="{{ $url2 }}{{ with $pageNumber }}page/{{ . | add 1 }}/{{ end }}" hreflang="{{ $lang2 }}">
-    <img src="/dist/images/country-flag-{{ .Lang }}.png" alt="" width="25" height="25">
-    <span>{{ .Site.Params.LANG_FROM | safeHTML }}</span>
-  </a>
-</div>
+<a title="{{ .Site.Params.LANG_TO }}" href="{{ $url2 }}{{ with $pageNumber }}page/{{ . | add 1 }}/{{ end }}" hreflang="{{ $lang2 }}">
+<img src="/dist/images/country-flag-{{ .Lang }}.png" alt="" width="25" height="25">
+<span>{{ .Site.Params.LANG_FROM | safeHTML }}</span></a></div>

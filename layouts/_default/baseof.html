@@ -49,20 +49,20 @@
 
 <main class="main">
 
-  {{- if .Params.gallery }}
-    {{- partial "gallery.html" . }}
-  {{- end }}
+{{- if .Params.gallery }}
+{{- partial "gallery.html" . }}
+{{- end }}
 
 <div class="content"> 
-  <div class="top-bar">
-    {{ partial "github.html" }}
+<div class="top-bar">
+{{ partial "github.html" }}
 
-    {{ if not .IsHome }}{{ partial "breadcrumbs.html" . }}{{ end }}
-  </div>			
+{{- if not .IsHome }}{{ partial "breadcrumbs.html" . }}{{ end }}
+</div>			
 
 {{ block "main" . }}{{ end }}
 
-  {{ if not .IsHome }}{{ partial "get-last-edited.html" . }}{{ end }}
+{{- if not .IsHome }}{{ partial "get-last-edited.html" . }}{{ end }}
 </div>
 </main>
 

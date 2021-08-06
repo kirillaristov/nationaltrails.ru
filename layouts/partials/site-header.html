@@ -1,29 +1,14 @@
-<header class="header">
-	<div class="header-row row1">
-		<div class="header-row__content">
-		
-		{{ partial "menu-top.html" . }}
+<header class="header"><div class="header-row row1"><div class="header-row__content">
+{{ partial "menu-top.html" . }}
+{{ partial "lang-changer.html" . }}
+</div></div>
 
-		{{ partial "lang-changer.html" . }}
+<div class="header-row row2"><div class="header-row__content">
+<a class="home" href="/{{ .Lang }}" title="{{ .Site.Params.HOME_PAGE }}">{{ partial "svg/logo.svg" }}</a>
+<div class="row2 column2">
+<h1 class="header__site-name"><a title="{{ .Site.Params.HOME_PAGE }}" href="/{{ .Lang }}">{{ .Site.Params.TITLE }}</a></h1>
+{{ partial "menu-middle.html" . }}
+</div>
 
-		</div>
-	</div>
-
-
-	<div class="header-row row2">
-		<div class="header-row__content">
-		
-			<a class="home" href="/{{ .Lang }}" title="{{ .Site.Params.HOME_PAGE }}">{{ partial "svg/logo.svg" }}</a>
-		
-			<div class="row2 column2">
-				<h1 class="header__site-name"><a title="{{ .Site.Params.HOME_PAGE }}" href="/{{ .Lang }}">{{ .Site.Params.TITLE }}</a></h1>
-
-				{{ partial "menu-middle.html" . }}
-
-			</div>
-
-			{{ partial "lang-changer.html" . }}
-
-		</div>
-	</div>
-</header>
+{{ partial "lang-changer.html" . }}
+</div></div></header>

@@ -3,26 +3,25 @@
 <h2 class="post__title">{{ with partial "get-title.html" . }}{{ . }}{{ end }}</h2>
 
 <ul class="blogcontent">
-  {{- range .Paginator.Pages }}
-  <li>
-    {{ partial "get-date.html" . }}
-    <h2 class="post__title"><a href="{{ .RelPermalink }}">{{ with partial "get-title.html" . }}{{ . }}{{ end }}</a></h2>
+{{- range .Paginator.Pages }}
+<li>
+{{ partial "get-date.html" . }}
+<h2 class="post__title"><a href="{{ .RelPermalink }}">{{ with partial "get-title.html" . }}{{ . }}{{ end }}</a></h2>
+{{- with partial "get-post-coord.html" . }}{{ . }}{{ end }}
 
-    {{ partial "get-post-coord.html" . }}
-
-    {{- with partial "get-images.html" . }}   
-      <p class="images">
-        {{- range $image := . }}
-          {{- with $.Site.GetPage $image }}
-            {{- partial "figure2.html" . }}
-          {{- end }}
-        {{- end }}
-      </p>
+{{- with partial "get-images.html" . }}   
+  <p class="images">
+    {{- range $image := . }}
+      {{- with $.Site.GetPage $image }}
+        {{- partial "figure2.html" . }}
+      {{- end }}
     {{- end }}
+  </p>
+{{- end }}
 
-    {{ partial "get-content.html" . }}
-  </li>
-  {{- end }}
+{{- partial "get-content.html" . -}}
+</li>
+{{ end -}}
 </ul>
 
 {{- partial "pagination.html" . }}
